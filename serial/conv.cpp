@@ -2,6 +2,7 @@
 #include <vector>
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 using namespace std;
 
 vector<vector<float> > img;
@@ -113,12 +114,18 @@ float cov(int row,int col){
 }
 
 int main(){
-    init(true);
+    clock_t start, end;
+    init(false);
+
+    start=clock();
     for(int i=1;i<img.size()-1;i++){
         for(int j=1;j<img[0].size()-1;j++){
             ans[i-1][j-1]=cov(i,j);
         }
     }
+    end=clock();
+    printf("Time = %f\n",((double)(end - start))/CLOCKS_PER_SEC);
+
     showAns();
     
     return 0;
