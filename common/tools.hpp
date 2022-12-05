@@ -7,11 +7,6 @@
 #include "stb_image_write.h"
 using namespace std;
 
-vector<vector<float> > img;
-vector<vector<float> > kernel;
-vector<vector<float> > ans;
-int width,height,bpp,pad;
-
 void readImg(){
     vector<float> tmp;
     uint8_t *rgb_image=stbi_load("../common/image.jpeg",&width,&height,&bpp,3);
@@ -35,7 +30,7 @@ void readImg(){
                 if(i==0){
                     tmp.push_back(((float)rgb_image[i+k*bpp+j*width*bpp]/bpp));
                 }else{
-                    img[j][k]+=rgb_image[i+k*bpp+j*width*bpp]/bpp;
+                    img[j+pad][k+pad]+=rgb_image[i+k*bpp+j*width*bpp]/bpp;
                 }
             }
             if(i==0){
@@ -81,9 +76,9 @@ void readKernel(){
 }
 void initAns(){
     vector<float> tmp;
-    for(int i=1;i<img.size()-1;i++){
+    for(int i=pad;i<img.size()-pad;i++){
         tmp.clear();
-        for(int j=1;j<img[0].size()-1;j++){
+        for(int j=pad;j<img[0].size()-pad;j++){
             tmp.push_back(0);
         }
         ans.push_back(tmp);
@@ -101,5 +96,5 @@ void writeAns(){
             rgb_image[width*i+j]=ans[i][j];
         }
     }
-    stbi_write_png("./image.jpeg", width, height, 1, rgb_image, width * 1);
+    stbi_write_png("./image.jpeg",width,height,1,rgb_image,width*1);
 }
