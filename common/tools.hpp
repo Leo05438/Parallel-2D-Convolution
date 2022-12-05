@@ -47,13 +47,14 @@ void readImg(){
         }
         img.push_back(tmp);
     }
-    img.push_back(tmp);
+    // img.push_back(tmp);
     stbi_image_free(rgb_image);
 }
+
 void readKernel(){
     int size,entry,sum=0;
     ifstream f;
-    f.open("kernel.txt");
+    f.open("../common/kernel.txt");
     f>>size;
     pad=size/2;
 
@@ -74,6 +75,7 @@ void readKernel(){
     }
     f.close();
 }
+
 void initAns(){
     vector<float> tmp;
     for(int i=pad;i<img.size()-pad;i++){
@@ -84,17 +86,59 @@ void initAns(){
         ans.push_back(tmp);
     }
 }
+
 void init(){
     readKernel();
     readImg();
     initAns();
 }
+
 void writeAns(){
-    uint8_t *rgb_image=new uint8_t[width*height];
-    for(int i=0;i<height;i++){
-        for(int j=0;j<width;j++){
-            rgb_image[width*i+j]=ans[i][j];
+    FILE *fptr = fopen("./ans.txt", "w");
+    
+    for(int i = 0; i < height; i++){
+        for(int j = 0; j < width; j++){
+            fprintf(fptr, "%f\n", (float) ans[i][j]);
         }
     }
-    stbi_write_png("./image.jpeg",width,height,1,rgb_image,width*1);
+
+    fclose(fptr);
+}
+
+void writeImage(){
+    uint8_t* ans_image = (uint8_t*) malloc(width * height * 1);
+
+    for(int i = 0; i < height; i++){
+        for(int j = 0; j < width; j++){
+            ans_image[width * i + j] = ans[i][j];
+        }
+    }
+
+    stbi_write_png("./image.jpeg", width, height, 1, ans_image, width * 1);
+    stbi_image_free(ans_image);
+}
+
+void checkAns(){
+    FILE *fptr = fopen("../serial/ans.txt", "r");
+    vector<float> ans_arr;
+    float tmp;
+    bool flag;
+
+    for(long long int i = 0; i < height * width; i++){
+        flag = fscanf(fptr, "%f", &tmp);
+        ans_arr.push_back(tmp);
+    }
+
+    for(int i = 0; i < height; i++){
+        for(int j = 0; j < width; j++){
+            if((ans[i][j] - ans_arr[i * width + j]) > 10e-5){
+                printf("Wrong Answer in ans[%d][%d]:\n", i, j);
+                printf("Serial Ans = %f, Your Ans = %f\n", ans_arr[i * width + j], ans[i][j]);
+                return;
+            }
+        }
+    }
+
+    printf("Correct Anwser\n");
+    writeImage();
 }

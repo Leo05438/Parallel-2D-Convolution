@@ -33,5 +33,6 @@ int main(){
     printf("Time = %f\n",((double)(end-start))/CLOCKS_PER_SEC);
 
     writeAns();
+    writeImage();
     return 0;
 }

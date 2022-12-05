@@ -1,23 +1,67 @@
 #include <stdint.h>
 #include <pthread.h>
+#include <stdio.h>
+#include <time.h>
+#include <vector>
+using namespace std;
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+// image variables
+vector<vector<float> > img;
+vector<vector<float> > kernel;
+vector<vector<float> > ans;
+int width, height, bpp, pad;
+#include "../common/tools.hpp"
 
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image_write.h"
+// shared variables
+long thread_cnt;
 
-#define CHANNEL_NUM 3
+void compute_conv(long row_id, vector<vector<float> > &ans){
+    for(int col_id = pad; col_id < width + pad; col_id++){
+        float out = 0;
 
-int main() {
-    int width, height, bpp;
+        for(int i = 0; i < kernel.size(); i++){
+            for(int j = 0; j < kernel[0].size(); j++){
+                out += (kernel[i][j] * img[row_id + i - pad][col_id + j - pad]);
+            }
+        }
 
-    uint8_t *rgb_image = stbi_load("../common/image.jpeg", &width, &height, &bpp, 3);
+        ans[row_id - pad][col_id - pad] = out;
+    }
+}
 
-    // Write your code to populate rgb_image here
-    // stbi_write_png("./image.jpeg", width, height, CHANNEL_NUM, rgb_image, width * CHANNEL_NUM);
+void* thread_conv_func(void *rank){
+    long my_rank = (long) rank;
 
-    stbi_image_free(rgb_image);
+    for(long row_id = pad + my_rank; row_id < height + pad; row_id += thread_cnt){
+        compute_conv(row_id, ans);
+    }
+
+    return NULL;
+}
+
+int main(int argc, char *argv[]){
+    clock_t start, end;
+    pthread_t* thread_handles;
+
+    init();
+
+    start = clock();
+
+    thread_cnt = strtol(argv[1], NULL, 10);
+    thread_handles = (pthread_t*) malloc (thread_cnt * sizeof(pthread_t));
+
+    // create threads
+    for(long thread = 0; thread < thread_cnt; thread++)
+        pthread_create(&thread_handles[thread], NULL, thread_conv_func, (void*) thread);
+    
+    // wait for threads join
+    for(long thread = 0; thread < thread_cnt; thread++)
+        pthread_join(thread_handles[thread], NULL);
+
+    end = clock();
+    printf("Time = %f\n",((double)(end-start))/CLOCKS_PER_SEC);
+
+    checkAns();
 
     return 0;
 }
