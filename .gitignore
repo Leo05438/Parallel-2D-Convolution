@@ -1,2 +1,5 @@
 .DS_store
 serial/conv.out
+
+# ignore /stb folder
+/stb
