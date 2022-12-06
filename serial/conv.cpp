@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <time.h>
 #include <vector>
+#include <sys/time.h>
 using namespace std;
 
 vector<vector<float> > img;
@@ -22,15 +22,21 @@ float cov(int row,int col){
 int main(){
     init();
 
-    clock_t start, end;
-    start=clock();
-    for(int i=pad;i<img.size()-pad;i++){
-        for(int j=pad;j<img[0].size()-pad;j++){
-            ans[i-pad][j-pad]=cov(i,j);
+    struct timeval start, end;
+    gettimeofday(&start, 0);
+
+    for(int T = 0; T < 500; T++){
+        for(int i=pad;i<img.size()-pad;i++){
+            for(int j=pad;j<img[0].size()-pad;j++){
+                ans[i-pad][j-pad]=cov(i,j);
+            }
         }
     }
-    end=clock();
-    printf("Time = %f\n",((double)(end-start))/CLOCKS_PER_SEC);
+    
+    gettimeofday(&end, 0);
+    int sec = end.tv_sec - start.tv_sec;
+    int usec = end.tv_usec - start.tv_usec;
+    printf("Elapsed time: %f sec\n", (sec+(usec/1000000.0))); 
 
     writeAns();
     writeImage();
