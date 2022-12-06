@@ -47,7 +47,6 @@ void readImg(){
         }
         img.push_back(tmp);
     }
-    // img.push_back(tmp);
     stbi_image_free(rgb_image);
 }
 
