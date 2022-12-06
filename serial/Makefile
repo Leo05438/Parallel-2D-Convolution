@@ -1,2 +1,4 @@
 all:
-	g++ -o conv.out conv.cpp
+	g++ conv.cpp -O3 -o conv.out
+clean:
+	rm -rf conv.out
