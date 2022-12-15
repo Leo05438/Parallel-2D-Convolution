@@ -75,6 +75,29 @@ void readKernel(){
     f.close();
 }
 
+void readKernel_sk(){
+    int size,entry,scale;
+    ifstream f;
+    f.open("../common/kernel_sk.txt");
+    f>>size>>scale;
+    pad=size/2;
+
+    for(int i=0;i<2;i++){
+        vector<float> tmp;
+        for(int j=0;j<size;j++){
+            f>>entry;
+            tmp.push_back(entry);
+        }
+        kernel.push_back(tmp);
+    }
+    for(int i=0;i<2;i++){
+        for(int j=0;j<size;j++){
+            kernel[i][j]/=scale;
+        }
+    }
+    f.close();
+}
+
 void initAns(){
     vector<float> tmp;
     for(int i=pad;i<img.size()-pad;i++){
@@ -88,6 +111,12 @@ void initAns(){
 
 void init(){
     readKernel();
+    readImg();
+    initAns();
+}
+
+void init_sk(){
+    readKernel_sk();
     readImg();
     initAns();
 }
