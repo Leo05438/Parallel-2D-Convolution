@@ -4,7 +4,7 @@
 using namespace std;
 
 vector<vector<float> > img;
-vector<vector<float> > kernel;//row 0: vertical kernel, row 1: herizontal kernel
+vector<vector<float> > kernel;//row 0: vertical kernel, row 1: horizontal kernel
 vector<vector<float> > ans;
 int width,height,bpp,pad;
 #include "../common/tools.hpp"

@@ -4,4 +4,4 @@
 
 line1:size,scale on each kernel
 line2:vertical kernel
-line3:herizontal kernel
+line3:horizontal kernel
