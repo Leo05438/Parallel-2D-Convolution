@@ -93,6 +93,9 @@ void readKernel_sk(){
     for(int i=0;i<size;i++){
         kernel[1][i]/=scale;
     }
+    for(int i=0;i<size;i++){
+        kernel[0][i]/=scale;
+    }
     f.close();
 }
 
@@ -157,7 +160,7 @@ void checkAns(){
 
     for(int i = 0; i < height; i++){
         for(int j = 0; j < width; j++){
-            if((ans[i][j] - ans_arr[i * width + j]) > 10e-5){
+            if((ans[i][j] - ans_arr[i * width + j]) > 10e-4){
                 printf("Wrong Answer in ans[%d][%d]:\n", i, j);
                 printf("Serial Ans = %f, Your Ans = %f\n", ans_arr[i * width + j], ans[i][j]);
                 return;
