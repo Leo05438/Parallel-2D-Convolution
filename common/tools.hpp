@@ -90,10 +90,8 @@ void readKernel_sk(){
         }
         kernel.push_back(tmp);
     }
-    for(int i=0;i<2;i++){
-        for(int j=0;j<size;j++){
-            kernel[i][j]/=scale;
-        }
+    for(int i=0;i<size;i++){
+        kernel[1][i]/=scale;
     }
     f.close();
 }
