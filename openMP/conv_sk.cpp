@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <vector>
 #include <sys/time.h>
+#include <omp.h>
 using namespace std;
 
 vector<vector<float> > img;
@@ -55,7 +56,7 @@ int main(int argc, char *argv[]){
     int sec = end.tv_sec - start.tv_sec;
     int usec = end.tv_usec - start.tv_usec;
     printf("Elapsed time: %f sec\n", (sec+(usec/1000000.0))); 
-    
+
     checkAns();
     return 0;
 }
