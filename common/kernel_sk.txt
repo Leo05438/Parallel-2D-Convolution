@@ -2,6 +2,6 @@
 1 1 1 1 1
 1 1 1 1 1
 
-line1:size,scale on each kernel
+line1:size,scale
 line2:vertical kernel
 line3:horizontal kernel
