@@ -75,6 +75,30 @@ void readKernel(){
     f.close();
 }
 
+void readKernel_sk(){
+    int size,entry,scale;
+    ifstream f;
+    f.open("../common/kernel_sk.txt");
+    f>>size>>scale;
+    pad=size/2;
+
+    for(int i=0;i<2;i++){
+        vector<float> tmp;
+        for(int j=0;j<size;j++){
+            f>>entry;
+            tmp.push_back(entry);
+        }
+        kernel.push_back(tmp);
+    }
+    for(int i=0;i<size;i++){
+        kernel[1][i]/=scale;
+    }
+    for(int i=0;i<size;i++){
+        kernel[0][i]/=scale;
+    }
+    f.close();
+}
+
 void initAns(){
     vector<float> tmp;
     for(int i=pad;i<img.size()-pad;i++){
@@ -88,6 +112,12 @@ void initAns(){
 
 void init(){
     readKernel();
+    readImg();
+    initAns();
+}
+
+void init_sk(){
+    readKernel_sk();
     readImg();
     initAns();
 }
@@ -130,7 +160,7 @@ void checkAns(){
 
     for(int i = 0; i < height; i++){
         for(int j = 0; j < width; j++){
-            if((ans[i][j] - ans_arr[i * width + j]) > 10e-5){
+            if((ans[i][j] - ans_arr[i * width + j]) > 10e-4){
                 printf("Wrong Answer in ans[%d][%d]:\n", i, j);
                 printf("Serial Ans = %f, Your Ans = %f\n", ans_arr[i * width + j], ans[i][j]);
                 return;
