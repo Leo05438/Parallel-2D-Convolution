@@ -1,10 +1,9 @@
 CXX = g++
 CXXFLAG = -O3
 CXXLIBS = -lpthread
-CXXINCS = -I ../common
 
-EXE = pthread
-CPP = pthread.cpp
+EXE = conv.out
+CPP = conv.cpp
 
 OBJ = ${CPP:.cpp=.o}
 
@@ -14,7 +13,7 @@ ${EXE}: ${OBJ}
 		${CXX} $^ ${CXXFLAG} ${CXXLIBS} -o $@
 
 %.o: %.cpp
-	${CXX} -c $< ${CXXFLAG} ${CXXINCS} ${CXXLIBS} -o $@
+	${CXX} -c $< ${CXXFLAG} ${CXXLIBS} -o $@
 
 .PHONY: clean
 
