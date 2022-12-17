@@ -11,7 +11,7 @@ vector<vector<float> > ans;
 int width,height,bpp,pad;
 #include "../common/tools.hpp"
 
-float cov_sk(int row,int col,int turn){
+inline float cov_sk(int row,int col,int turn){
     float output=0;
     if(!turn){//turn==0
         for(int i=0;i<kernel[turn].size();i++){
