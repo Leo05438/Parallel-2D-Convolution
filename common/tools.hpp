@@ -101,9 +101,9 @@ void readKernel_sk(){
 
 void initAns(){
     vector<float> tmp;
-    for(int i=pad;i<img.size()-pad;i++){
+    for(unsigned long i=pad;i<img.size()-pad;i++){
         tmp.clear();
-        for(int j=pad;j<img[0].size()-pad;j++){
+        for(unsigned long j=pad;j<img[0].size()-pad;j++){
             tmp.push_back(0);
         }
         ans.push_back(tmp);
@@ -151,16 +151,15 @@ void checkAns(){
     FILE *fptr = fopen("../serial/ans.txt", "r");
     vector<float> ans_arr;
     float tmp;
-    bool flag;
 
     for(long long int i = 0; i < height * width; i++){
-        flag = fscanf(fptr, "%f", &tmp);
-        ans_arr.push_back(tmp);
+        if (fscanf(fptr, "%f", &tmp) != EOF)
+            ans_arr.push_back(tmp);
     }
 
     for(int i = 0; i < height; i++){
         for(int j = 0; j < width; j++){
-            if((ans[i][j] - ans_arr[i * width + j]) > 10e-4){
+            if((ans[i][j] - ans_arr[i * width + j]) > 10e-3){
                 printf("Wrong Answer in ans[%d][%d]:\n", i, j);
                 printf("Serial Ans = %f, Your Ans = %f\n", ans_arr[i * width + j], ans[i][j]);
                 return;
