@@ -9,7 +9,7 @@ vector<vector<float> > ans;
 int width,height,bpp,pad;
 #include "../common/tools.hpp"
 
-float cov(int row,int col){
+inline float cov(int row,int col){
     float output=0;
     for(int i=0;i<kernel.size();i++){
         for(int j=0;j<kernel[0].size();j++){
