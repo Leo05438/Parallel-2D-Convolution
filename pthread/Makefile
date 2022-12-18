@@ -1,22 +1,8 @@
-CXX = g++
-CXXFLAG = -O3
-CXXLIBS = -lpthread
-CXXINCS = -I ../common
+all:
+	g++ conv.cpp -O3 -lpthread -o conv.out
+	g++ conv_sk.cpp -O3 -lpthread -o conv_sk.out
+	g++ conv_tp.cpp -O3 -lpthread -o conv_tp.out
+	g++ conv_tprow.cpp -O3 -lpthread -o conv_tprow.out
 
-EXE = pthread
-CPP = pthread.cpp
-
-OBJ = ${CPP:.cpp=.o}
-
-all: ${EXE}
-
-${EXE}: ${OBJ}
-		${CXX} $^ ${CXXFLAG} ${CXXLIBS} -o $@
-
-%.o: %.cpp
-	${CXX} -c $< ${CXXFLAG} ${CXXINCS} ${CXXLIBS} -o $@
-
-.PHONY: clean
-
-clean:                             
-	rm -rf ${EXE} ${OBJ}
+clean:
+	rm -rf *.out
