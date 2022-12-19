@@ -68,8 +68,8 @@ void* worker_thread_func(void*){
 }
 
 void assign_jobs(){
-    for(int row_id = pad; row_id <= height; row_id++){
-        for(int col_id = pad; col_id <= width; col_id++){
+    for(int row_id = pad; row_id < height + pad; row_id++){
+        for(int col_id = pad; col_id < width + pad; col_id++){
             job_queue.push(Jobs(row_id, col_id));
         }
     }
