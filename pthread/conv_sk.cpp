@@ -69,12 +69,28 @@ int main(int argc, char *argv[]){
     pthread_t* thread_handles;
     struct timeval start, end;
 
-    if(argc != 2){
+    if(argc < 2){
         printf("Usage: ./pthread <# threads>\n");
         exit(0);
     }
+    
+    char input_kernel_name[32] = {0}, input_img_name[32] = {0};
+    char input_kernel_fullname[256] = {0}, input_img_fullname[256] = {0};
+    
+    if (argc > 3) {
+        sprintf(input_img_name, "%s", argv[2]);
+        sprintf(input_kernel_name, "%s", argv[3]);
+    } else if (argc == 3) {
+        sprintf(input_img_name, "%s", argv[2]);
+        sprintf(input_kernel_name, "%s", "kernel3x3_sk.txt");
+    } else {
+        sprintf(input_img_name, "%s", "image.jpeg");
+        sprintf(input_kernel_name, "%s", "kernel3x3_sk.txt");
+    } 
 
-    init_sk();
+    sprintf(input_img_fullname, "../common/image/%s", input_img_name);
+    sprintf(input_kernel_fullname, "../common/kernel/%s", input_kernel_name);
+    init_sk(input_img_fullname, input_kernel_fullname);
     inittmp_img();
 
     gettimeofday(&start, 0);
@@ -83,7 +99,7 @@ int main(int argc, char *argv[]){
     thread_handles = (pthread_t*) malloc (thread_cnt * sizeof(pthread_t));
     pthread_barrier_init(&mybarrier, NULL, thread_cnt);
 
-    for(int T = 0; T < 500; T++){
+    for(int T = 0; T < RUN_NUM; T++){
         // create threads
         for(long thread = 0; thread < thread_cnt; thread++)
             pthread_create(&thread_handles[thread], NULL, thread_conv_func, (void*) thread);
@@ -100,7 +116,16 @@ int main(int argc, char *argv[]){
     int usec = end.tv_usec - start.tv_usec;
     printf("Elapsed time: %f sec\n", (sec+(usec/1000000.0))); 
 
-    checkAns();
+    char ans_txt_name[256], out_txt_name[256], out_img_name[256];
+    char *strip_input_img_name = strip_dot(input_img_name);
+    char *strip_input_kernel_name = strip_dot(input_kernel_name);
+    sprintf(ans_txt_name, "../serial/output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_txt_name, "./output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_img_name, "./output/%s_%s.jpeg", strip_input_img_name, strip_input_kernel_name);
+    
+    writeAns(out_txt_name);
+    writeImage(out_img_name);
+    checkAns(ans_txt_name, out_img_name);
 
     return 0;
 }

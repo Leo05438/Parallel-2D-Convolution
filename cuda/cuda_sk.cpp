@@ -24,6 +24,20 @@ float* vec2arr(const vector<vector<float> >& vec) {
     return ret;
 }
 
+float* padded_vec2arr(const vector<vector<float> >& vec, int pad) {
+    int rows = vec.size() - 2 * pad;
+    int cols = vec[0].size() - 2 * pad;
+
+    printf("rows = %d, cols = %d\n", rows, cols);
+    float *ret = new float[rows * cols];
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
+            ret[r * cols + c] = vec[r + pad][c + pad];
+        }
+    }
+    return ret;
+}
+
 void arr2vec(vector<vector<float> >& vec, float *arr) {
     int rows = vec.size();
     int cols = vec[0].size();
@@ -54,29 +68,43 @@ void display(const vector<vector<float> >& vec) {
     }
 }
 
-int main(){
+int main(int argc, char *argv[]){
 
-    init();
+    char input_kernel_name[32] = {0}, input_img_name[32] = {0};
+    char input_kernel_fullname[256] = {0}, input_img_fullname[256] = {0};
+    
+    if (argc > 2) {
+        sprintf(input_img_name, "%s", argv[1]);
+        sprintf(input_kernel_name, "%s", argv[2]);
+    } else if (argc == 2) {
+        sprintf(input_img_name, "%s", argv[1]);
+        sprintf(input_kernel_name, "%s", "kernel3x3_sk.txt");
+    } else {
+        sprintf(input_img_name, "%s", "image.jpeg");
+        sprintf(input_kernel_name, "%s", "kernel3x3_sk.txt");
+    } 
+
+    sprintf(input_img_fullname, "../common/image/%s", input_img_name);
+    sprintf(input_kernel_fullname, "../common/kernel/%s", input_kernel_name);
+    init_sk(input_img_fullname, input_kernel_fullname);
 
     float *img_arr, *ans_arr, *kernel_arr;
-    float *d_img = NULL, *d_ans = NULL, *d_kernel = NULL;
-    int k_size = kernel.size();
+    int k_size = kernel[0].size();
 
-    img_arr = vec2arr(img);
+    img_arr = padded_vec2arr(img, pad);
     ans_arr = vec2arr(ans);
     kernel_arr = vec2arr(kernel);
-
-    mallocKernelAndAns(d_ans, d_kernel, kernel_arr, width, height, k_size);
 
     struct timeval start, end;
     gettimeofday(&start, 0);
 
+
     // init cuda mem
-    for(int T = 0; T < 500; T++) {
-        printf("%d\n", T);
-        convolution(ans_arr, d_img, d_ans, d_kernel, img_arr, width, height, k_size, pad);
-        // convolution(img_arr, ans_arr, width, height, k_size, pad);
+    mallocKernelAndAns(kernel_arr, width, height, k_size, pad);
+    for(int T = 0; T < RUN_NUM; T++) {
+        convolution(img_arr, ans_arr, width, height, k_size, pad);
     }
+    freeKernelAndAns();
 
     gettimeofday(&end, 0);
 
@@ -85,9 +113,17 @@ int main(){
     printf("Elapsed time: %f sec\n", (sec + (usec / 1000000.0))); 
 
     arr2vec(ans, ans_arr);
-    writeImage();
-    writeAns();
-    checkAns();
+
+    char ans_txt_name[256], out_txt_name[256], out_img_name[256];
+    char *strip_input_img_name = strip_dot(input_img_name);
+    char *strip_input_kernel_name = strip_dot(input_kernel_name);
+    sprintf(ans_txt_name, "../serial/output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_txt_name, "./output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_img_name, "./output/%s_%s.jpeg", strip_input_img_name, strip_input_kernel_name);
+    
+    writeAns(out_txt_name);
+    writeImage(out_img_name);
+    checkAns(ans_txt_name, out_img_name);
 
     free(img_arr);
     free(ans_arr);

@@ -79,12 +79,28 @@ int main(int argc, char *argv[]){
     pthread_t* thread_handles;
     struct timeval start, end;
 
-    if(argc != 2){
+    if(argc < 2){
         printf("Usage: ./pthread <# threads>\n");
         exit(0);
     }
 
-    init();
+    char input_kernel_name[32] = {0}, input_img_name[32] = {0};
+    char input_kernel_fullname[256] = {0}, input_img_fullname[256] = {0};
+    
+    if (argc > 3) {
+        sprintf(input_img_name, "%s", argv[2]);
+        sprintf(input_kernel_name, "%s", argv[3]);
+    } else if (argc == 3) {
+        sprintf(input_img_name, "%s", argv[2]);
+        sprintf(input_kernel_name, "%s", "kernel3x3.txt");
+    } else {
+        sprintf(input_img_name, "%s", "image.jpeg");
+        sprintf(input_kernel_name, "%s", "kernel3x3.txt");
+    } 
+
+    sprintf(input_img_fullname, "../common/image/%s", input_img_name);
+    sprintf(input_kernel_fullname, "../common/kernel/%s", input_kernel_name);
+    init(input_img_fullname, input_kernel_fullname);
 
     sem_init(&event_new_job, 0, 0);
     sem_init(&mutex_job_queue, 0, 1);
@@ -94,7 +110,7 @@ int main(int argc, char *argv[]){
     thread_cnt = strtol(argv[1], NULL, 10);
     thread_handles = (pthread_t*) malloc (thread_cnt * sizeof(pthread_t));
 
-    for(int T = 0; T < 500; T++){
+    for(int T = 0; T < RUN_NUM; T++){
         // assign jobs
         assign_jobs();
 
@@ -115,7 +131,16 @@ int main(int argc, char *argv[]){
     sem_destroy(&event_new_job);
     sem_destroy(&mutex_job_queue);
 
-    checkAns();
+    char ans_txt_name[256], out_txt_name[256], out_img_name[256];
+    char *strip_input_img_name = strip_dot(input_img_name);
+    char *strip_input_kernel_name = strip_dot(input_kernel_name);
+    sprintf(ans_txt_name, "../serial/output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_txt_name, "./output/%s_%s.txt", strip_input_img_name, strip_input_kernel_name);
+    sprintf(out_img_name, "./output/%s_%s.jpeg", strip_input_img_name, strip_input_kernel_name);
+    
+    writeAns(out_txt_name);
+    writeImage(out_img_name);
+    checkAns(ans_txt_name, out_img_name);
 
     return 0;
 }

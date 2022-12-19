@@ -6,13 +6,8 @@
 
 float *d_img, *d_ans, *d_kernel;
 
-__global__ void cov(float *d_img, 
-                    float *d_ans, 
-                    float *d_kernel,
-                    int width, 
-                    int height, 
-                    int k_size, 
-                    int pad) {
+__global__ void conv(float *d_ans, float *d_img, float *d_kernel, 
+                     int width, int height, int k_size, int pad) {
 
     int r = blockIdx.y * (blockDim.y - 2 * pad) + threadIdx.y;
     int c = blockIdx.x * (blockDim.x - 2 * pad) + threadIdx.x;
@@ -26,6 +21,7 @@ __global__ void cov(float *d_img,
 
     // tiling : load patch and kernel to shared memory in a SM
     shared_patch[threadIdx.y][threadIdx.x] = d_img[r * padded_img_width + c];
+
     shared_kernel[threadIdx.y % k_size][threadIdx.x % k_size] = d_kernel[(threadIdx.y % k_size) * k_size + threadIdx.x % k_size];
     __syncthreads();
 
@@ -46,8 +42,9 @@ __global__ void cov(float *d_img,
     d_ans[ans_r * width + ans_c] = res;
 }
 
-void mallocKernelAndAns(float *kernel_arr, int width, int height, int k_size) {
+void mallocKernelAndAns(float *kernel_arr, int width, int height, int k_size, int pad) {
 
+    cudaMalloc((void **)&d_img, (width + 2 * pad) * (height + 2 * pad) * sizeof(float));
     cudaMalloc((void **)&d_ans, width * height * sizeof(float));
     cudaMalloc((void **)&d_kernel, k_size * k_size * sizeof(float));
     cudaMemcpy(d_kernel, kernel_arr, k_size * k_size * sizeof(float), cudaMemcpyHostToDevice);
@@ -62,18 +59,18 @@ void convolution(float *img_arr,
                  int pad) {
 
     // init cuda arr
-    cudaMalloc((void **)&d_img, (width + 2 * pad) * (height + 2 * pad) * sizeof(float));
     cudaMemcpy(d_img, img_arr, (width + 2 * pad) * (height + 2 * pad) * sizeof(float), cudaMemcpyHostToDevice);
 
     dim3 blockSize(BLOCK_SIZE, BLOCK_SIZE);
     dim3 numBlock(width / (BLOCK_SIZE - 2 * pad) + 1, height / (BLOCK_SIZE - 2 * pad) + 1);
-    cov<<<numBlock, blockSize>>>(d_img, d_ans, d_kernel, width, height, k_size, pad);
+    conv<<<numBlock, blockSize>>>(d_ans, d_img, d_kernel, width, height, k_size, pad);
 
     cudaMemcpy(ans_arr, d_ans, width * height * sizeof(float), cudaMemcpyDeviceToHost);
-    cudaFree(d_img);
+
 }
 
 void freeKernelAndAns() {
-    cudaFree(d_kernel);
+    cudaFree(d_img);
     cudaFree(d_ans);
+    cudaFree(d_kernel);
 }

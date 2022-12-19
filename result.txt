@@ -1,0 +1,184 @@
+g++ conv.cpp -O3 -o conv.out
+g++ conv_sk.cpp -O3 -o conv_sk.out
+
+method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 3x3
+
+Elapsed time: 0.000097 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 3x3
+
+Elapsed time: 0.000045 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 5x5
+
+Elapsed time: 0.000156 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 5x5
+
+Elapsed time: 0.000060 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 7x7
+
+Elapsed time: 0.000288 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 7x7
+
+Elapsed time: 0.000078 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 9x9
+
+Elapsed time: 0.000398 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 9x9
+
+Elapsed time: 0.000101 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 11x11
+
+Elapsed time: 0.000636 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 11x11
+
+Elapsed time: 0.000126 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 3x3
+
+Elapsed time: 0.001651 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 3x3
+
+Elapsed time: 0.000683 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 5x5
+
+Elapsed time: 0.002426 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 5x5
+
+Elapsed time: 0.000840 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 7x7
+
+Elapsed time: 0.004624 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 7x7
+
+Elapsed time: 0.001119 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 9x9
+
+Elapsed time: 0.006361 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 9x9
+
+Elapsed time: 0.001315 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 11x11
+
+Elapsed time: 0.010200 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 11x11
+
+Elapsed time: 0.001676 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 3x3
+
+Elapsed time: 0.026842 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 3x3
+
+Elapsed time: 0.012077 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 5x5
+
+Elapsed time: 0.039619 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 5x5
+
+Elapsed time: 0.016089 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 7x7
+
+Elapsed time: 0.072876 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 7x7
+
+Elapsed time: 0.017505 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 9x9
+
+Elapsed time: 0.103304 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 9x9
+
+Elapsed time: 0.021004 sec
+Correct Anwser
+
+method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 11x11
+
+Elapsed time: 0.162084 sec
+Correct Anwser
+
+method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 11x11
+
+Elapsed time: 0.025824 sec
+Correct Anwser
+g++ conv.cpp -O3 -lpthread -o conv.out
+g++ conv_sk.cpp -O3 -lpthread -o conv_sk.out
+g++ conv_tp.cpp -O3 -lpthread -o conv_tp.out
+g++ conv_tprow.cpp -O3 -lpthread -o conv_tprow.out
+
+method = pthread | exec = conv.out | thread_num = 2 | resolution = 128x128 | kernel_size = 3x3
+
+
+method = pthread | exec = conv_sk.out | thread_num = 2 | resolution = 128x128 | kernel_size = 3x3
+
+Elapsed time: 0.000243 sec
+Correct Anwser
+
+method = pthread | exec = conv_tp.out | thread_num = 2 | resolution = 128x128 | kernel_size = 3x3
+
+
+method = pthread | exec = conv_tprow.out | thread_num = 2 | resolution = 128x128 | kernel_size = 3x3
+
+
+method = pthread | exec = conv.out | thread_num = 3 | resolution = 128x128 | kernel_size = 3x3
+
+
+method = pthread | exec = conv_sk.out | thread_num = 3 | resolution = 128x128 | kernel_size = 3x3
+
+Elapsed time: 0.000300 sec
+Correct Anwser
+
+method = pthread | exec = conv_tp.out | thread_num = 3 | resolution = 128x128 | kernel_size = 3x3
+
+
+method = pthread | exec = conv_tprow.out | thread_num = 3 | resolution = 128x128 | kernel_size = 3x3
+
