@@ -3,6 +3,7 @@ all:
 	g++ conv_sk.cpp -O3 -lpthread -o conv_sk.out
 	g++ conv_tp.cpp -O3 -lpthread -o conv_tp.out
 	g++ conv_tprow.cpp -O3 -lpthread -o conv_tprow.out
+	g++ conv_bk.cpp -O3 -lpthread -o conv_bk.out
 
 clean:
 	rm -rf *.out
