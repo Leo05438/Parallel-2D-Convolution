@@ -41,13 +41,13 @@ void compute_conv(long row_id, vector<vector<float> > &out_img, int turn){
 void* thread_conv_func(void *rank){
     long my_rank = (long) rank;
 
-    for(long row_id = pad + my_rank; row_id <= height; row_id += thread_cnt){
+    for(long row_id = pad + my_rank; row_id < height + pad; row_id += thread_cnt){
         compute_conv(row_id, tmp_img, 0);
     }
 
     pthread_barrier_wait(&mybarrier);
 
-    for(long row_id = pad + my_rank; row_id <= height; row_id += thread_cnt){
+    for(long row_id = pad + my_rank; row_id < height + pad; row_id += thread_cnt){
         compute_conv(row_id, ans, 1);
     }
 

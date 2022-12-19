@@ -7,19 +7,6 @@
 #include <semaphore.h>
 using namespace std;
 
-// struct Jobs{
-//     int row_id, col_id;
-
-//     Jobs(): row_id(-1), col_id(-1) {}
-//     Jobs(const int &row, const int &col): row_id(row), col_id(col) {}
-
-//     Jobs& operator =(const Jobs& a){
-//         row_id = a.row_id;
-//         col_id = a.col_id;
-//         return *this;
-//     }
-// };
-
 // image variables
 vector<vector<float> > img;
 vector<vector<float> > kernel;
@@ -29,7 +16,6 @@ int width, height, bpp, pad;
 
 // shared variables
 long thread_cnt;
-// queue<Jobs> job_queue;
 queue<int> job_queue;
 sem_t event_new_job, mutex_job_queue;
 
@@ -48,7 +34,6 @@ void compute_conv(long row_id, vector<vector<float> > &ans){
 }
 
 void* worker_thread_func(void*){
-    // Jobs new_job;
     int new_job;
 
     while(true){
@@ -72,13 +57,7 @@ void* worker_thread_func(void*){
 }
 
 void assign_jobs(){
-    // for(int row_id = pad; row_id <= height; row_id++){
-    //     for(int col_id = pad; col_id <= width; col_id++){
-    //         job_queue.push(Jobs(row_id, col_id));
-    //     }
-    // }
-
-    for(int row_id = pad; row_id <= height; row_id++){
+    for(int row_id = pad; row_id < height + pad; row_id++){
         job_queue.push(row_id);
     }
 }
