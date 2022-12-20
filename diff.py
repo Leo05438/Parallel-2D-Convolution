@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-img_serial = cv2.imread('serial/sk_128x128.jpeg', cv2.IMREAD_GRAYSCALE)
-img_cuda = cv2.imread('cuda/sk_128x128.jpeg', cv2.IMREAD_GRAYSCALE)
+img_serial = cv2.imread('serial/output/128x128_kernel11x11_sk.jpeg', cv2.IMREAD_GRAYSCALE)
+img_cuda = cv2.imread('cuda/output/128x128_kernel11x11_sk.jpeg', cv2.IMREAD_GRAYSCALE)
 
 diff = img_cuda - img_serial
 

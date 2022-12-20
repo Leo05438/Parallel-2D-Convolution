@@ -8,7 +8,7 @@
 #include "stb_image_write.h"
 using namespace std;
 
-#define RUN_NUM 1
+#define RUN_NUM 1000
 
 char* strip_dot(char *src) {
     int slen = strlen(src);
@@ -70,8 +70,8 @@ void readImg(const char *img_filename){
     vector<float> tmp;
     uint8_t *rgb_image=stbi_load(img_filename,&width,&height,&bpp,3);
 
-    tmp.clear();
     for(int i=0;i<pad;i++){
+        tmp.clear();
         for(int j=0;j<width+pad*2;j++){
             tmp.push_back(0);
         }
@@ -101,6 +101,7 @@ void readImg(const char *img_filename){
         }
     }
     for(int i=0;i<pad;i++){
+        tmp.clear();
         for(int j=0;j<width+pad*2;j++){
             tmp.push_back(0);
         }

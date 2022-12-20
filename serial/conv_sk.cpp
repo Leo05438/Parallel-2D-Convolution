@@ -27,9 +27,9 @@ float cov_sk(int row,int col,int turn){
 
 void inittmp_img(){
     vector<float> tmp;
-    for(int i=pad;i<img.size();i++){
+    for(int i=0;i<img.size();i++){
         tmp.clear();
-        for(int j=pad;j<img[0].size();j++){
+        for(int j=0;j<img[0].size();j++){
             tmp.push_back(0);
         }
         tmp_img.push_back(tmp);

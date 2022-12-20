@@ -20,7 +20,6 @@ __global__ void conv0(float *d_ans, float *d_img, float *d_kernel_0,
         if (r + ki >= 0 && r + ki < height)
             res += d_img[(r + ki) * width + c] * d_kernel_0[(ki + pad)];
     }
-    if (r == height - 1 && c == 0) printf("res 0 : %f\n", res);
     d_ans[r * width + c] = res;
 }
 
@@ -38,7 +37,6 @@ __global__ void conv1(float *d_ans, float *d_img, float *d_kernel_1,
         if (c + ki >= 0 && c + ki < width)
             res += d_img[r * width + (c + ki)] * d_kernel_1[(ki + pad)];
     }
-    if (r == height - 1 && c == 0) printf("res 1 : %f\n", res);
     d_ans[r * width + c] = res;
 }
 

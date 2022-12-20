@@ -28,7 +28,6 @@ float* padded_vec2arr(const vector<vector<float> >& vec, int pad) {
     int rows = vec.size() - 2 * pad;
     int cols = vec[0].size() - 2 * pad;
 
-    printf("rows = %d, cols = %d\n", rows, cols);
     float *ret = new float[rows * cols];
     for (int r = 0; r < rows; r++) {
         for (int c = 0; c < cols; c++) {

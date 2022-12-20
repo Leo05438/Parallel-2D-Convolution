@@ -8,9 +8,11 @@ CXXINCS = -I ../common
 CUDA_LINK_FLAGS =  -rdc=true -gencode=arch=compute_86,code=sm_86 -Xcompiler '-fPIC' 
 CUDA_COMPILE_FLAGS = --device-c -gencode=arch=compute_86,code=sm_86 -Xcompiler '-fPIC' -g -O3
 
-EXE = conv_basic.out conv_pitch.out conv_tiling.out conv_tiling_modified.out conv_tiling+pitch.out conv_sk_basic.out
+EXE = conv_basic.out conv_pitch.out conv_tiling.out conv_tiling_modified.out conv_tiling+pitch.out \
+	  conv_sk_basic.out conv_sk_tiling.out conv_sk_tiling_modified.out
 
-OBJS = cuda.o cuda_sk.o kernel_basic.o kernel_pitch.o kernel_tiling.o kernel_tiling_modified.o kernel_tiling+pitch.o kernel_sk_basic.o
+OBJS = cuda.o cuda_sk.o kernel_basic.o kernel_pitch.o kernel_tiling.o kernel_tiling_modified.o kernel_tiling+pitch.o \
+	   kernel_sk_basic.o kernel_sk_tiling.o kernel_sk_tiling_modified.o
 
 all: $(EXE)
 	rm $(OBJS)
@@ -50,7 +52,19 @@ kernel_tiling+pitch.o: kernel_tiling+pitch.cu
 conv_sk_basic.out: kernel_sk_basic.o cuda_sk.o
 	$(NVCC) $(CUDA_LINK_FLAGS) -o $@ $^
 
+conv_sk_tiling.out: kernel_sk_tiling.o cuda_sk.o
+	$(NVCC) $(CUDA_LINK_FLAGS) -o $@ $^
+
+conv_sk_tiling_modified.out: kernel_sk_tiling_modified.o cuda_sk.o
+	$(NVCC) $(CUDA_LINK_FLAGS) -o $@ $^
+
 kernel_sk_basic.o: kernel_sk_basic.cu
+	$(NVCC) $(CUDA_COMPILE_FLAGS) -c $< -o $@
+
+kernel_sk_tiling.o: kernel_sk_tiling.cu
+	$(NVCC) $(CUDA_COMPILE_FLAGS) -c $< -o $@
+
+kernel_sk_tiling_modified.o: kernel_sk_tiling_modified.cu
 	$(NVCC) $(CUDA_COMPILE_FLAGS) -c $< -o $@
 
 # for cpp files
