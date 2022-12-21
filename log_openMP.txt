@@ -1,877 +1,998 @@
 g++ conv.cpp -O3 -o conv.out -fopenmp
 g++ conv_sk.cpp -O3 -o conv_sk.out -fopenmp
 
+method=openMP|exec=conv.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.085136 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.043895 sec
+Correct Anwser
+
 method=openMP|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.043396 sec
+Elapsed time: 0.043913 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.022907 sec
+Elapsed time: 0.022863 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.029922 sec
+Elapsed time: 0.030255 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.016057 sec
+Elapsed time: 0.015950 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.022547 sec
+Elapsed time: 0.022827 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.012181 sec
+Elapsed time: 0.012343 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.018379 sec
+Elapsed time: 0.018785 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.010310 sec
+Elapsed time: 0.010320 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.016134 sec
+Elapsed time: 0.016009 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.009253 sec
+Elapsed time: 0.009046 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.014194 sec
+Elapsed time: 0.014078 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.008668 sec
+Elapsed time: 0.007993 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.012357 sec
+Elapsed time: 0.022669 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.007675 sec
+Elapsed time: 0.012027 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.136038 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.059907 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.068262 sec
+Elapsed time: 0.069934 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.031504 sec
+Elapsed time: 0.031227 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.046871 sec
+Elapsed time: 0.047621 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.021764 sec
+Elapsed time: 0.022030 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.035716 sec
+Elapsed time: 0.037364 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.016962 sec
+Elapsed time: 0.016958 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.030005 sec
+Elapsed time: 0.029705 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.014084 sec
+Elapsed time: 0.013859 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.025233 sec
+Elapsed time: 0.025154 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.012527 sec
+Elapsed time: 0.012133 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.022672 sec
+Elapsed time: 0.021999 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.010950 sec
+Elapsed time: 0.010767 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.019641 sec
+Elapsed time: 0.019621 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.009795 sec
+Elapsed time: 0.009798 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.269952 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.070911 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.134868 sec
+Elapsed time: 0.134679 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.035590 sec
+Elapsed time: 0.035617 sec
 Wrong Answer in ans[62][126]:
-Serial Ans = 145.081665, Your Ans = -18022166300524030264233681286594560.000000
+Serial Ans = 145.081665, Your Ans = -1371585260561541537271615152193536.000000
 
 method=openMP|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.091254 sec
+Elapsed time: 0.094757 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.029482 sec
-Correct Anwser
+Elapsed time: 0.025251 sec
+Wrong Answer in ans[62][126]:
+Serial Ans = 145.081665, Your Ans = -1381002115697880514350238427774976.000000
 
 method=openMP|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.069864 sec
+Elapsed time: 0.070050 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.019607 sec
-Correct Anwser
+Elapsed time: 0.019763 sec
+Wrong Answer in ans[62][126]:
+Serial Ans = 145.081665, Your Ans = -16139398324158464.000000
 
 method=openMP|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.056904 sec
+Elapsed time: 0.058275 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.017484 sec
+Elapsed time: 0.016353 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.049593 sec
+Elapsed time: 0.048945 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.014522 sec
+Elapsed time: 0.014171 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.044868 sec
+Elapsed time: 0.042725 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.012914 sec
+Elapsed time: 0.012465 sec
 Wrong Answer in ans[62][126]:
-Serial Ans = 145.081665, Your Ans = -56413923631773345992721563648.000000
+Serial Ans = 145.081665, Your Ans = -2439519928320.000000
 
 method=openMP|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.046398 sec
+Elapsed time: 0.070654 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.011757 sec
+Elapsed time: 0.019882 sec
 Correct Anwser
 
+method=openMP|exec=conv.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.363743 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.084739 sec
+Wrong Answer in ans[61][124]:
+Serial Ans = 183.432098, Your Ans = -9989492.000000
+
 method=openMP|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.189839 sec
+Elapsed time: 0.186463 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.043883 sec
-Wrong Answer in ans[61][124]:
-Serial Ans = 183.432098, Your Ans = -5710382165908061046177792.000000
+Elapsed time: 0.045057 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.126787 sec
+Elapsed time: 0.127804 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.029674 sec
-Correct Anwser
+Elapsed time: 0.030175 sec
+Wrong Answer in ans[61][124]:
+Serial Ans = 183.432098, Your Ans = 1985.097046
 
 method=openMP|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.095664 sec
+Elapsed time: 0.094906 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.023758 sec
+Elapsed time: 0.023196 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.078846 sec
+Elapsed time: 0.078855 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.019280 sec
+Elapsed time: 0.019864 sec
 Wrong Answer in ans[61][124]:
-Serial Ans = 183.432098, Your Ans = 146997753954496909701777622994780160.000000
+Serial Ans = 183.432098, Your Ans = 47698063458132033536.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.067475 sec
+Elapsed time: 0.065699 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.017261 sec
+Elapsed time: 0.016498 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.063447 sec
+Elapsed time: 0.058073 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.014595 sec
+Elapsed time: 0.014547 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.066729 sec
+Elapsed time: 0.090166 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.013851 sec
+Elapsed time: 0.013620 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.609560 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.116378 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.304233 sec
+Elapsed time: 0.309149 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.059073 sec
-Correct Anwser
+Elapsed time: 0.062084 sec
+Wrong Answer in ans[61][126]:
+Serial Ans = 132.181824, Your Ans = -10097928.000000
 
 method=openMP|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.206527 sec
+Elapsed time: 0.212381 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.040872 sec
-Wrong Answer in ans[122][126]:
-Serial Ans = 109.214890, Your Ans = 2153497833086368446613964746500603904.000000
+Elapsed time: 0.041678 sec
+Wrong Answer in ans[61][126]:
+Serial Ans = 132.181824, Your Ans = 4738870915339192253909140559689154560.000000
 
 method=openMP|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.157601 sec
+Elapsed time: 0.156528 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.032778 sec
-Correct Anwser
+Elapsed time: 0.032472 sec
+Wrong Answer in ans[122][126]:
+Serial Ans = 109.214890, Your Ans = 213711562179237258494738432.000000
 
 method=openMP|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.128600 sec
+Elapsed time: 0.128176 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.026930 sec
-Wrong Answer in ans[127][126]:
-Serial Ans = 60.487602, Your Ans = -961310580804555898880.000000
+Elapsed time: 0.026834 sec
+Wrong Answer in ans[122][126]:
+Serial Ans = 109.214890, Your Ans = 53747192965248458753242285735936.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.110103 sec
+Elapsed time: 0.109332 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.022917 sec
-Correct Anwser
+Elapsed time: 0.022303 sec
+Wrong Answer in ans[122][126]:
+Serial Ans = 109.214890, Your Ans = -10229286637804716032.000000
 
 method=openMP|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.096025 sec
+Elapsed time: 0.095118 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.020585 sec
+Elapsed time: 0.019877 sec
 Wrong Answer in ans[122][126]:
-Serial Ans = 109.214890, Your Ans = 132823508864524648365900036910874624.000000
+Serial Ans = 109.214890, Your Ans = 63.952194
 
 method=openMP|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.081848 sec
+Elapsed time: 0.080099 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.018708 sec
+Elapsed time: 0.017658 sec
 Wrong Answer in ans[122][126]:
-Serial Ans = 109.214890, Your Ans = -36842618142448418816.000000
+Serial Ans = 109.214890, Your Ans = -85633769472.000000
+
+method=openMP|exec=conv.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 1.321873 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.650314 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.684442 sec
+Elapsed time: 0.680720 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.332264 sec
+Elapsed time: 0.331996 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.456110 sec
+Elapsed time: 0.459794 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.223974 sec
+Elapsed time: 0.225592 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.347935 sec
+Elapsed time: 0.347312 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.177320 sec
+Elapsed time: 0.172691 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.282373 sec
+Elapsed time: 0.281260 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.138465 sec
+Elapsed time: 0.138720 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.238989 sec
+Elapsed time: 0.235086 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.116947 sec
+Elapsed time: 0.117786 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.208531 sec
+Elapsed time: 0.203432 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.102598 sec
+Elapsed time: 0.100087 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.182456 sec
+Elapsed time: 0.177898 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.088946 sec
+Elapsed time: 0.096470 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 2.181437 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.853778 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 1.095879 sec
+Elapsed time: 1.098142 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.429235 sec
+Elapsed time: 0.428799 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.739801 sec
+Elapsed time: 0.739042 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.293703 sec
+Elapsed time: 0.284455 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.558538 sec
+Elapsed time: 0.548135 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.224817 sec
+Elapsed time: 0.220124 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.457661 sec
+Elapsed time: 0.447397 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.179501 sec
+Elapsed time: 0.179109 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.383826 sec
+Elapsed time: 0.383288 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.150596 sec
+Elapsed time: 0.149163 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.335964 sec
+Elapsed time: 0.329276 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.130200 sec
+Elapsed time: 0.127324 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.297054 sec
+Elapsed time: 0.289742 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.116764 sec
+Elapsed time: 0.113401 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 4.309441 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.082559 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 2.182370 sec
+Elapsed time: 2.119008 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.576534 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = -5290289274970702696415232.000000
+Elapsed time: 0.562453 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.466029 sec
+Elapsed time: 1.442142 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.395096 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 330964083037783982080.000000
+Elapsed time: 0.393917 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.107710 sec
+Elapsed time: 1.071355 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.295571 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 157370407679114084352.000000
+Elapsed time: 0.285773 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.901097 sec
+Elapsed time: 0.882848 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.243535 sec
-Correct Anwser
+Elapsed time: 0.235199 sec
+Wrong Answer in ans[126][510]:
+Serial Ans = 145.578247, Your Ans = 45168131183084568576.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.755344 sec
+Elapsed time: 0.748137 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.206777 sec
+Elapsed time: 0.205604 sec
 Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 235467338575511552.000000
+Serial Ans = 145.578247, Your Ans = -297027.843750
 
 method=openMP|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.653424 sec
+Elapsed time: 0.665891 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.181726 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 21168566697853402756888841177530368.000000
+Elapsed time: 0.267391 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.586414 sec
+Elapsed time: 0.825358 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.158315 sec
+Elapsed time: 0.151119 sec
 Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = -254747896347664544956416.000000
+Serial Ans = 145.578247, Your Ans = 4713346502754304.000000
+
+method=openMP|exec=conv.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 5.886669 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.247903 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 2.996674 sec
+Elapsed time: 2.981688 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.649542 sec
-Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = -673.743286
+Elapsed time: 0.617993 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 2.012451 sec
+Elapsed time: 1.972989 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.432257 sec
-Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = -335107852091801993216.000000
+Elapsed time: 0.427226 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.525918 sec
+Elapsed time: 1.505191 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.332027 sec
+Elapsed time: 0.324348 sec
 Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = -12839684325796672844674695173872025600.000000
+Serial Ans = 173.576157, Your Ans = 59506.906250
 
 method=openMP|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.235203 sec
+Elapsed time: 1.218809 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.272333 sec
-Correct Anwser
+Elapsed time: 0.269799 sec
+Wrong Answer in ans[125][508]:
+Serial Ans = 173.576157, Your Ans = -86761443523797823998741220163584.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.037996 sec
+Elapsed time: 1.025346 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.231073 sec
-Correct Anwser
+Elapsed time: 0.222062 sec
+Wrong Answer in ans[125][508]:
+Serial Ans = 173.576157, Your Ans = 7055694255309450859545362432.000000
 
 method=openMP|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.900740 sec
+Elapsed time: 0.896785 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.197826 sec
-Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = 11953533173707129081558424798153932800.000000
+Elapsed time: 0.195775 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.787837 sec
+Elapsed time: 0.801127 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.177907 sec
+Elapsed time: 0.234447 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 9.696923 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.633922 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 4.892557 sec
+Elapsed time: 4.907640 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.848178 sec
-Correct Anwser
+Elapsed time: 0.838688 sec
+Wrong Answer in ans[506][510]:
+Serial Ans = 154.796158, Your Ans = 39728711981137346564689231872.000000
 
 method=openMP|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 3.281992 sec
+Elapsed time: 3.306639 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.569923 sec
+Elapsed time: 0.569599 sec
 Wrong Answer in ans[124][510]:
-Serial Ans = 117.473839, Your Ans = -707800793910008341288118776204623872.000000
+Serial Ans = 117.473839, Your Ans = 216.245850
 
 method=openMP|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 2.499434 sec
+Elapsed time: 2.495973 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.438041 sec
+Elapsed time: 0.431128 sec
 Wrong Answer in ans[253][510]:
-Serial Ans = 161.677704, Your Ans = 762991168.000000
+Serial Ans = 161.677704, Your Ans = 13823815917690742347137024.000000
 
 method=openMP|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 2.022697 sec
+Elapsed time: 2.060628 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.350596 sec
-Wrong Answer in ans[506][510]:
-Serial Ans = 154.796158, Your Ans = 1855294741151744.000000
+Elapsed time: 0.362268 sec
+Wrong Answer in ans[253][510]:
+Serial Ans = 161.677704, Your Ans = 2555702304309248.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.709022 sec
+Elapsed time: 1.684522 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.295069 sec
-Correct Anwser
+Elapsed time: 0.296770 sec
+Wrong Answer in ans[506][510]:
+Serial Ans = 154.796158, Your Ans = 19522031261302390784.000000
 
 method=openMP|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.478617 sec
+Elapsed time: 1.460945 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.259094 sec
-Wrong Answer in ans[253][510]:
-Serial Ans = 161.677704, Your Ans = -3596913213440.000000
+Elapsed time: 0.255522 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.335584 sec
+Elapsed time: 1.319508 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.227337 sec
+Elapsed time: 0.225224 sec
+Wrong Answer in ans[253][510]:
+Serial Ans = 161.677704, Your Ans = 38933295529984.000000
+
+method=openMP|exec=conv.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 21.358036 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 10.554058 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 10.903324 sec
+Elapsed time: 10.924821 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 5.440520 sec
+Elapsed time: 5.335453 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 7.251144 sec
+Elapsed time: 7.362947 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.735862 sec
+Elapsed time: 3.630171 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 5.491670 sec
+Elapsed time: 5.555206 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.840893 sec
+Elapsed time: 2.800518 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 4.515167 sec
+Elapsed time: 4.472362 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.331083 sec
+Elapsed time: 2.299748 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.767697 sec
+Elapsed time: 3.780119 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.128465 sec
+Elapsed time: 2.024404 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.253373 sec
+Elapsed time: 3.253675 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 1.845064 sec
+Elapsed time: 1.800851 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.872917 sec
+Elapsed time: 3.334398 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 1.681551 sec
+Elapsed time: 1.955285 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 34.873819 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 13.067759 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 17.670058 sec
+Elapsed time: 17.553493 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 6.754780 sec
+Elapsed time: 6.711488 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 11.881146 sec
+Elapsed time: 11.825186 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.602003 sec
+Elapsed time: 4.497625 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 9.023874 sec
+Elapsed time: 8.870807 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 3.541044 sec
+Elapsed time: 3.385716 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 7.239453 sec
+Elapsed time: 7.117352 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.815611 sec
+Elapsed time: 2.750998 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 6.076481 sec
+Elapsed time: 6.024045 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.354428 sec
+Elapsed time: 2.370755 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 5.287644 sec
+Elapsed time: 5.233196 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.123769 sec
+Elapsed time: 2.030732 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.637722 sec
+Elapsed time: 4.607225 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 1.844462 sec
+Elapsed time: 1.835323 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 68.190597 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 17.828030 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 35.127362 sec
+Elapsed time: 34.383980 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 9.436527 sec
+Elapsed time: 9.125165 sec
 Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = -478096441009419097535938560.000000
+Serial Ans = 94.503418, Your Ans = -10325.175781
 
 method=openMP|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 23.564033 sec
+Elapsed time: 23.376217 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 6.390463 sec
+Elapsed time: 6.277909 sec
 Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 1101305186327600300032.000000
+Serial Ans = 94.503418, Your Ans = -160103934323253575680.000000
 
 method=openMP|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 17.854899 sec
+Elapsed time: 17.821516 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 4.823491 sec
+Elapsed time: 4.889091 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 14.337367 sec
+Elapsed time: 14.247788 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 3.914881 sec
+Elapsed time: 3.920129 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 12.161531 sec
+Elapsed time: 11.938035 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 3.294631 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 3075928461160307556935008256.000000
+Elapsed time: 3.293326 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 10.429052 sec
+Elapsed time: 10.389963 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.887855 sec
+Elapsed time: 2.863450 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 9.190855 sec
+Elapsed time: 9.494760 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.570802 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = -4804068721010130548486918998948052992.000000
+Elapsed time: 2.477609 sec
+Correct Anwser
+
+method=openMP|exec=conv.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 93.237882 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 19.900433 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = 3200147651559424.000000
 
 method=openMP|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 48.219811 sec
+Elapsed time: 47.158899 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 10.255400 sec
+Elapsed time: 10.195521 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 32.391164 sec
+Elapsed time: 32.006892 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 6.941495 sec
+Elapsed time: 6.757807 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 24.696838 sec
+Elapsed time: 24.168483 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 5.252085 sec
-Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = -147847065859059719694450688.000000
+Elapsed time: 5.143279 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 19.842736 sec
+Elapsed time: 19.425708 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 4.278643 sec
-Correct Anwser
+Elapsed time: 4.194352 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = 9807125017674837603123200.000000
 
 method=openMP|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 16.714406 sec
+Elapsed time: 16.596055 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 3.593297 sec
-Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = -462690619228160.000000
+Elapsed time: 3.559905 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 14.461063 sec
+Elapsed time: 14.161531 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 3.091749 sec
-Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = -7.532845
+Elapsed time: 3.050308 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 12.732375 sec
+Elapsed time: 12.453713 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.746012 sec
+Elapsed time: 2.705202 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = 2273148893522821120.000000
+
+method=openMP|exec=conv.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 152.150306 sec
+Correct Anwser
+
+method=openMP|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 25.654228 sec
 Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 78.934673 sec
+Elapsed time: 76.583443 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 13.423675 sec
-Wrong Answer in ans[1021][2046]:
-Serial Ans = 122.633606, Your Ans = 119.380508
+Elapsed time: 12.998234 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 53.059747 sec
+Elapsed time: 51.780967 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 9.076287 sec
-Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = 625118487102464458752.000000
+Elapsed time: 9.024032 sec
+Wrong Answer in ans[1021][2046]:
+Serial Ans = 122.633606, Your Ans = -1061108041798709236256502448128.000000
 
 method=openMP|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 40.331892 sec
+Elapsed time: 40.011030 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 6.855952 sec
+Elapsed time: 6.840954 sec
 Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = 548226.000000
+Serial Ans = 84.165298, Your Ans = -81179327219911098368.000000
 
 method=openMP|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 32.440033 sec
+Elapsed time: 32.252000 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 5.523436 sec
-Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = 32174724087808.000000
+Elapsed time: 5.541865 sec
+Correct Anwser
 
 method=openMP|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 27.204924 sec
+Elapsed time: 26.984146 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 4.648762 sec
-Wrong Answer in ans[1021][2046]:
-Serial Ans = 122.633606, Your Ans = -1019219227443200.000000
+Elapsed time: 4.657142 sec
+Wrong Answer in ans[2047][2046]:
+Serial Ans = 60.567497, Your Ans = -6283632031821154465349632.000000
 
 method=openMP|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 23.522653 sec
+Elapsed time: 23.289579 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 4.060958 sec
-Correct Anwser
+Elapsed time: 3.966629 sec
+Wrong Answer in ans[2047][2046]:
+Serial Ans = 60.567497, Your Ans = -5844846080.000000
 
 method=openMP|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 20.622905 sec
+Elapsed time: 20.553015 sec
 Correct Anwser
 
 method=openMP|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 3.536198 sec
-Wrong Answer in ans[2047][2046]:
-Serial Ans = 60.567497, Your Ans = 1467612.625000
+Elapsed time: 3.547802 sec
+Wrong Answer in ans[1021][2046]:
+Serial Ans = 122.633606, Your Ans = 896841.187500

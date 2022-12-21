@@ -56,9 +56,9 @@ def main():
             attr_line = pthread_lines[i]
             time_line = pthread_lines[i + 1]
             # ignore conv_tp.out
-            if 'conv_tp.out' in attr_line:
-                i += 1
-                continue
+            # if 'conv_tp.out' in attr_line:
+            #     i += 1
+            #     continue
 
             # head = line.split('|')[0].split('=')[1].strip()
             method = attr_line.split('|')[1].split('=')[1].strip()[:-4] # ignore ".out"
@@ -67,6 +67,9 @@ def main():
             kernel_size = attr_line.split('|')[4].split('=')[1].strip()
             time = float(time_line.split(' ')[2]) # example : Elapsed time: 0.071317 sec
 
+            if thread_num == 1:
+                i += 1
+                continue
 
             if method not in pthread_data.keys():
                 pthread_data[method] = {}
@@ -115,14 +118,15 @@ def main():
             for method in methods:
                 plot_data[resolution][kernel_size][method] = []
                 for thread_num in thread_nums:
-                    val = np.round(pthread_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = pthread_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[resolution][kernel_size][method].append(val)
     
-    font = {'size': 9}
+    font = {'size': 8}
     matplotlib.rc('font', **font)
 
     list_length = len(thread_nums)
@@ -130,7 +134,7 @@ def main():
         for kernel_size in kernel_sizes:
         
             x = np.arange(list_length)
-            width = 0.2
+            width = 0.18
             padding = 0.0
 
             max_y = 0.0
@@ -165,11 +169,12 @@ def main():
             for method in methods:
                 plot_data[thread_num][kernel_size][method] = []
                 for resolution in resolutions:
-                    val = np.round(pthread_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = pthread_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[thread_num][kernel_size][method].append(val)
 
     list_length = len(resolutions)
@@ -181,7 +186,7 @@ def main():
             padding = 0.0
 
             max_y = 0.0
-            fig, ax = plt.subplots(figsize=(2.5 * list_length, 5))
+            fig, ax = plt.subplots(figsize=(3.5 * list_length, 5))
             for i, method in enumerate(methods):
                 w = x - (len(methods) - 1) / 2 * (width + padding) + i * (width + padding)
                 max_y = max(max_y, np.max(plot_data[thread_num][kernel_size][method]))
@@ -213,11 +218,12 @@ def main():
             for method in methods:
                 plot_data[resolution][thread_num][method] = []
                 for kernel_size in kernel_sizes:
-                    val = np.round(pthread_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = pthread_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[resolution][thread_num][method].append(val)
 
     list_length = len(kernel_sizes)
@@ -225,7 +231,7 @@ def main():
         for resolution in resolutions:
         
             x = np.arange(list_length)
-            width = 0.2
+            width = 0.18
             padding = 0.0
 
             max_y = 0.0

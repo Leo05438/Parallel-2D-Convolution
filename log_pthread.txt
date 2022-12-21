@@ -1,1718 +1,2441 @@
-g++ conv.cpp -O3 -lpthread -o conv.out
+g++ conv_cc.cpp -O3 -lpthread -o conv_cc.out
+g++ conv_bk.cpp -O3 -lpthread -o conv_bk.out
 g++ conv_sk.cpp -O3 -lpthread -o conv_sk.out
 g++ conv_tp.cpp -O3 -lpthread -o conv_tp.out
 g++ conv_tprow.cpp -O3 -lpthread -o conv_tprow.out
 
-method=pthread|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.057565 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.094113 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.121278 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.097828 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 1.310989 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.225093 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.063721 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.061127 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.039497 sec
+Elapsed time: 0.042397 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 1.884244 sec
+Elapsed time: 2.996104 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.055934 sec
+Elapsed time: 0.058193 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.048082 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.047179 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.050813 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.043944 sec
+Elapsed time: 0.048419 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 1.875013 sec
+Elapsed time: 1.937389 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.047780 sec
+Elapsed time: 0.046714 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.049117 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.044811 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.045311 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.045634 sec
+Elapsed time: 0.085928 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 2.334845 sec
+Elapsed time: 2.338280 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.046632 sec
+Elapsed time: 0.044282 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.052532 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.049826 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.052222 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.057302 sec
+Elapsed time: 0.075433 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 2.723426 sec
+Elapsed time: 2.744297 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.048650 sec
+Elapsed time: 0.046591 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.061704 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.062573 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.060940 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.074452 sec
+Elapsed time: 0.208493 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 2.781506 sec
+Elapsed time: 2.961802 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.055553 sec
+Elapsed time: 0.052242 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.069411 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.066722 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.066117 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.076865 sec
+Elapsed time: 0.252076 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 2.815159 sec
+Elapsed time: 2.884519 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.060117 sec
+Elapsed time: 0.055548 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.076217 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.072111 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.071642 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.183940 sec
+Elapsed time: 0.424672 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 2.770870 sec
+Elapsed time: 2.786931 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.072865 sec
+Elapsed time: 0.066342 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.080440 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.140699 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.139710 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.072065 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.356863 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.142586 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.080575 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.081901 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.049020 sec
+Elapsed time: 0.047040 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 1.916352 sec
+Elapsed time: 2.909811 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.082525 sec
+Elapsed time: 0.142443 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.064278 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.064981 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.064366 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.047693 sec
+Elapsed time: 0.050165 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 1.938172 sec
+Elapsed time: 1.986863 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.064706 sec
+Elapsed time: 0.062919 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.060099 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.058507 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.059363 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.048328 sec
+Elapsed time: 0.063479 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 2.268397 sec
+Elapsed time: 2.375723 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.059162 sec
+Elapsed time: 0.057038 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.063443 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.058369 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.068877 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.057717 sec
+Elapsed time: 0.119678 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 2.656852 sec
+Elapsed time: 2.663984 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.060301 sec
+Elapsed time: 0.056770 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.069058 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.068062 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.077865 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.067004 sec
+Elapsed time: 0.092665 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 2.863418 sec
+Elapsed time: 2.850028 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.065270 sec
+Elapsed time: 0.059148 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.077377 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.071116 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.074366 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.231662 sec
+Elapsed time: 0.293608 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 2.873955 sec
+Elapsed time: 2.998436 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.067948 sec
+Elapsed time: 0.066343 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.083058 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.077252 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.080299 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.379735 sec
+Elapsed time: 0.125907 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 2.804096 sec
+Elapsed time: 2.817798 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.072799 sec
+Elapsed time: 0.066272 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.140174 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.890403 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.951101 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.236653 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.455137 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.267707 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.143186 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.150201 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.055719 sec
-Correct Anwser
+Elapsed time: 0.054005 sec
+Wrong Answer in ans[62][126]:
+Serial Ans = 145.081665, Your Ans = -12681237760049152.000000
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.179096 sec
+Elapsed time: 3.350059 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.140822 sec
+Elapsed time: 0.146428 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.104931 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.107328 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.110792 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.051320 sec
-Wrong Answer in ans[62][126]:
-Serial Ans = 145.081665, Your Ans = -3297957859625743155200.000000
+Elapsed time: 0.049745 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.027537 sec
+Elapsed time: 2.073971 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.103844 sec
+Elapsed time: 0.107070 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.091044 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.089481 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.092284 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.052959 sec
-Correct Anwser
+Elapsed time: 0.073621 sec
+Wrong Answer in ans[62][126]:
+Serial Ans = 145.081665, Your Ans = -37584178056555963904688128.000000
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.295518 sec
+Elapsed time: 2.376831 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.087501 sec
+Elapsed time: 0.089192 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.091051 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.088874 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.092459 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.063228 sec
+Elapsed time: 0.080483 sec
 Wrong Answer in ans[62][126]:
-Serial Ans = 145.081665, Your Ans = 145.756042
+Serial Ans = 145.081665, Your Ans = 1473972736.000000
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.712882 sec
+Elapsed time: 2.833495 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.087314 sec
+Elapsed time: 0.083633 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.090344 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.097239 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.095378 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.076597 sec
-Correct Anwser
+Elapsed time: 0.095686 sec
+Wrong Answer in ans[62][126]:
+Serial Ans = 145.081665, Your Ans = 136.186676
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.955198 sec
+Elapsed time: 2.854593 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.080433 sec
+Elapsed time: 0.080441 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.094011 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.099432 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.096254 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.113915 sec
-Wrong Answer in ans[62][126]:
-Serial Ans = 145.081665, Your Ans = 116.582047
+Elapsed time: 0.235445 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.507562 sec
+Elapsed time: 2.985627 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.082495 sec
+Elapsed time: 0.097804 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.101459 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.094277 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.102956 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.215882 sec
+Elapsed time: 0.168340 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 2.848786 sec
+Elapsed time: 3.029097 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.089903 sec
+Elapsed time: 0.087979 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.194422 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.725274 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.617653 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.100522 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.581034 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=128x128|kernel_size=9x9
+Elapsed time: 1.136942 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.203559 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.203937 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.064245 sec
-Wrong Answer in ans[61][124]:
-Serial Ans = 183.432098, Your Ans = -8004201524459152872076950707896320.000000
+Elapsed time: 0.065378 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.304699 sec
+Elapsed time: 3.491659 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.198154 sec
+Elapsed time: 0.201583 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.140131 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.147165 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.148310 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.057787 sec
-Correct Anwser
+Elapsed time: 0.053838 sec
+Wrong Answer in ans[61][124]:
+Serial Ans = 183.432098, Your Ans = 185.034851
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.163059 sec
+Elapsed time: 2.161544 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.141026 sec
+Elapsed time: 0.140761 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.121325 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.116734 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.119054 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.054780 sec
+Elapsed time: 0.058623 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.473764 sec
+Elapsed time: 2.385116 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.114856 sec
+Elapsed time: 0.114630 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.108752 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.106347 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.114937 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.068133 sec
-Correct Anwser
+Elapsed time: 0.130716 sec
+Wrong Answer in ans[61][124]:
+Serial Ans = 183.432098, Your Ans = -303396859393765796200960753664.000000
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.788058 sec
+Elapsed time: 2.778106 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.104619 sec
+Elapsed time: 0.102150 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.110051 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.103148 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.110301 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.082393 sec
-Correct Anwser
+Elapsed time: 0.270431 sec
+Wrong Answer in ans[61][124]:
+Serial Ans = 183.432098, Your Ans = 121555419592891485934059520.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.945774 sec
+Elapsed time: 2.915035 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.106364 sec
+Elapsed time: 0.099030 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.116934 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.113908 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.118803 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.139657 sec
-Wrong Answer in ans[61][124]:
-Serial Ans = 183.432098, Your Ans = 183.545914
+Elapsed time: 0.102326 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.934175 sec
+Elapsed time: 2.896452 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.099216 sec
+Elapsed time: 0.097101 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.125459 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.123008 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.121174 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.329666 sec
-Wrong Answer in ans[61][124]:
-Serial Ans = 183.432098, Your Ans = -155348592.000000
+Elapsed time: 0.380602 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 2.848717 sec
+Elapsed time: 2.955966 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.100056 sec
+Elapsed time: 0.097689 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.311154 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 3.219970 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 1.904418 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.129589 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 1.944470 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=128x128|kernel_size=11x11
+Elapsed time: 3.649695 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.324609 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.324784 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.075289 sec
-Wrong Answer in ans[122][126]:
-Serial Ans = 109.214890, Your Ans = 838732677120.000000
+Elapsed time: 0.075927 sec
+Wrong Answer in ans[61][126]:
+Serial Ans = 132.181824, Your Ans = 161098450836914176.000000
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.427976 sec
+Elapsed time: 3.664942 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.313900 sec
+Elapsed time: 1.695670 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.221336 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.220534 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.228711 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.068431 sec
+Elapsed time: 0.064021 sec
 Wrong Answer in ans[61][126]:
-Serial Ans = 132.181824, Your Ans = -172635115834325192439334916340056064.000000
+Serial Ans = 132.181824, Your Ans = -18781777499607494740749468998523944960.000000
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.237142 sec
+Elapsed time: 2.342738 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.218511 sec
+Elapsed time: 0.225125 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.177925 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.176851 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.179261 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.062569 sec
-Wrong Answer in ans[61][126]:
-Serial Ans = 132.181824, Your Ans = 11679275698697151422315211562967629824.000000
+Elapsed time: 0.059428 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.395906 sec
+Elapsed time: 2.268198 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.174915 sec
+Elapsed time: 0.178622 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.156543 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.157811 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.165117 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.068182 sec
+Elapsed time: 0.094631 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.801470 sec
+Elapsed time: 2.798393 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.155217 sec
+Elapsed time: 0.152247 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.155278 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.144664 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.151400 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.075221 sec
-Correct Anwser
+Elapsed time: 0.296184 sec
+Wrong Answer in ans[61][126]:
+Serial Ans = 132.181824, Your Ans = -1472959111573216641941504.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.994899 sec
+Elapsed time: 2.970625 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.143039 sec
+Elapsed time: 0.136570 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.141867 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.151695 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.148437 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.114203 sec
-Correct Anwser
+Elapsed time: 0.285899 sec
+Wrong Answer in ans[61][126]:
+Serial Ans = 132.181824, Your Ans = -1317080113136456403565674496.000000
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 3.048152 sec
+Elapsed time: 2.999928 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.142709 sec
+Elapsed time: 0.132384 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.159503 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.154947 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.149298 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.233462 sec
+Elapsed time: 0.422241 sec
 Wrong Answer in ans[122][126]:
-Serial Ans = 109.214890, Your Ans = 115383779328.000000
+Serial Ans = 109.214890, Your Ans = 162991187884160644882104320.000000
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 2.889168 sec
+Elapsed time: 2.997457 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.135011 sec
+Elapsed time: 0.128234 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.650148 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 4.009705 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 3.889406 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 2.004362 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 7.003429 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=512x512|kernel_size=3x3
+Elapsed time: 2.079454 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=512x512|kernel_size=3x3
+Elapsed time: 3.555742 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=512x512|kernel_size=3x3
+Elapsed time: 1.722635 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.373515 sec
+Elapsed time: 0.389441 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 29.426304 sec
+Elapsed time: 32.680262 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.657457 sec
+Elapsed time: 1.525353 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.451508 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.457567 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.456659 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.269394 sec
+Elapsed time: 0.270500 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 30.029126 sec
+Elapsed time: 31.663087 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.450560 sec
+Elapsed time: 0.464277 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.352263 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.355051 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.351526 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.216944 sec
+Elapsed time: 0.217963 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 35.904690 sec
+Elapsed time: 37.515256 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.354069 sec
+Elapsed time: 0.358768 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.300658 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.301695 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.299915 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.192000 sec
+Elapsed time: 0.195798 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 43.232944 sec
+Elapsed time: 44.468995 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.295820 sec
+Elapsed time: 0.297911 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.271876 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.264276 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.267003 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.183788 sec
+Elapsed time: 0.175833 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 45.200966 sec
+Elapsed time: 46.966754 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.261458 sec
+Elapsed time: 0.261368 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.248545 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.247406 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.238793 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.174006 sec
+Elapsed time: 0.180913 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 44.780893 sec
+Elapsed time: 45.385264 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.237356 sec
+Elapsed time: 0.235881 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.253207 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.248973 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.245000 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.204588 sec
+Elapsed time: 0.185183 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 43.041582 sec
+Elapsed time: 44.390651 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.234618 sec
+Elapsed time: 0.233626 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 1.015341 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 4.057876 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 4.050162 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 4.649686 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 7.334154 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=512x512|kernel_size=5x5
+Elapsed time: 5.382596 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=512x512|kernel_size=5x5
+Elapsed time: 2.219688 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=512x512|kernel_size=5x5
+Elapsed time: 3.383541 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.449144 sec
+Elapsed time: 0.463337 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 30.230194 sec
+Elapsed time: 34.997328 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=512x512|kernel_size=5x5
-Elapsed time: 1.035148 sec
+Elapsed time: 1.763912 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.703189 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.718685 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.723124 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.318565 sec
+Elapsed time: 0.323133 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 30.968607 sec
+Elapsed time: 32.179838 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.704934 sec
+Elapsed time: 0.718699 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.540564 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.549173 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.550673 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.254561 sec
+Elapsed time: 0.253773 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 36.785327 sec
+Elapsed time: 37.825924 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.547207 sec
+Elapsed time: 0.594673 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.453702 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.449188 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.459995 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.227691 sec
+Elapsed time: 0.218084 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 40.954586 sec
+Elapsed time: 45.933155 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.454981 sec
+Elapsed time: 0.454714 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.403306 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.389178 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.395816 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.210545 sec
+Elapsed time: 0.201779 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 45.155517 sec
+Elapsed time: 46.468105 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.393903 sec
+Elapsed time: 0.392897 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.359242 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.363826 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.372638 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.201033 sec
+Elapsed time: 0.198738 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 46.067968 sec
+Elapsed time: 45.515674 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.356384 sec
+Elapsed time: 0.350803 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.368939 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.381712 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.354224 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.204235 sec
+Elapsed time: 0.238855 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 44.410305 sec
+Elapsed time: 45.406786 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.337327 sec
+Elapsed time: 0.328719 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.992467 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 4.779808 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 5.037951 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 3.974258 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 7.704951 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=512x512|kernel_size=7x7
+Elapsed time: 4.783427 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=512x512|kernel_size=7x7
+Elapsed time: 4.089886 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=512x512|kernel_size=7x7
+Elapsed time: 3.004633 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.592582 sec
-Correct Anwser
+Elapsed time: 2.941717 sec
+Wrong Answer in ans[126][510]:
+Serial Ans = 145.578247, Your Ans = 97395025685499441315840.000000
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 35.225307 sec
+Elapsed time: 35.455395 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=512x512|kernel_size=7x7
-Elapsed time: 2.020698 sec
+Elapsed time: 2.859606 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.349666 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.391351 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.390791 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.408213 sec
+Elapsed time: 0.414214 sec
 Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = -1728100826236861095727505342464.000000
+Serial Ans = 145.578247, Your Ans = -60483013311428072711119674802176.000000
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 36.264361 sec
+Elapsed time: 32.893295 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.368620 sec
+Elapsed time: 1.405429 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.038745 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.058910 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.053029 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.326033 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 142.736832
+Elapsed time: 0.323900 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 37.457377 sec
+Elapsed time: 38.426237 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=512x512|kernel_size=7x7
-Elapsed time: 1.044135 sec
+Elapsed time: 1.054853 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.858777 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.851605 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.869935 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.281028 sec
+Elapsed time: 0.280878 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 44.916456 sec
+Elapsed time: 44.822929 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.851534 sec
+Elapsed time: 0.853908 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.737049 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.724079 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.741343 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.255291 sec
+Elapsed time: 0.246021 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 45.652472 sec
+Elapsed time: 47.307814 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.728550 sec
+Elapsed time: 0.720427 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.657795 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.673946 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.641196 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.253153 sec
-Correct Anwser
+Elapsed time: 0.241452 sec
+Wrong Answer in ans[126][510]:
+Serial Ans = 145.578247, Your Ans = 145.547760
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 45.805954 sec
+Elapsed time: 47.389118 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.657966 sec
+Elapsed time: 0.636683 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.630748 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.605982 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=512x512|kernel_size=7x7
+Elapsed time: 0.593584 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.249257 sec
-Wrong Answer in ans[126][510]:
-Serial Ans = 145.578247, Your Ans = 29301292340661841365929361765925126144.000000
+Elapsed time: 0.234533 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 44.902275 sec
+Elapsed time: 45.133125 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.588378 sec
+Elapsed time: 0.581630 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 2.863313 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 7.147334 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 6.629297 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 2.112459 sec
+Wrong Answer in ans[125][508]:
+Serial Ans = 173.576157, Your Ans = -15504458703905895285707141229314048.000000
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 9.635172 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=512x512|kernel_size=9x9
+Elapsed time: 7.008161 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=512x512|kernel_size=9x9
+Elapsed time: 3.546971 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=512x512|kernel_size=9x9
+Elapsed time: 3.748406 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.671553 sec
-Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = -19070080543268001181761265705225814016.000000
+Elapsed time: 0.698157 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 37.483548 sec
+Elapsed time: 38.870286 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=512x512|kernel_size=9x9
-Elapsed time: 2.891153 sec
+Elapsed time: 3.526374 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.944347 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=512x512|kernel_size=9x9
+Elapsed time: 2.009816 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=512x512|kernel_size=9x9
+Elapsed time: 2.070430 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.467600 sec
+Elapsed time: 0.474700 sec
 Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = 173.873138
+Serial Ans = 173.576157, Your Ans = -10074770636800.000000
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 35.351988 sec
+Elapsed time: 35.754048 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.950301 sec
+Elapsed time: 2.000297 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.488624 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.537465 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.539559 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.369987 sec
+Elapsed time: 0.369341 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 38.961682 sec
+Elapsed time: 42.574017 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.490734 sec
+Elapsed time: 1.529937 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.214337 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.234629 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.253376 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.322898 sec
+Elapsed time: 0.312881 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 44.912644 sec
+Elapsed time: 48.517481 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.216156 sec
+Elapsed time: 1.224261 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.050896 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.026962 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.054053 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.290098 sec
-Correct Anwser
+Elapsed time: 0.279043 sec
+Wrong Answer in ans[125][508]:
+Serial Ans = 173.576157, Your Ans = 658258576254435328.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 45.902563 sec
+Elapsed time: 48.621630 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=512x512|kernel_size=9x9
-Elapsed time: 1.037405 sec
+Elapsed time: 1.023056 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.968537 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=512x512|kernel_size=9x9
+Elapsed time: 0.924581 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=512x512|kernel_size=9x9
+Elapsed time: 0.912473 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.267336 sec
+Elapsed time: 0.264017 sec
 Wrong Answer in ans[125][508]:
-Serial Ans = 173.576157, Your Ans = 1486149120.000000
+Serial Ans = 173.576157, Your Ans = -59223368392062649408524477051961344.000000
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 46.288844 sec
+Elapsed time: 48.015636 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.929369 sec
+Elapsed time: 0.902049 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.866454 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=512x512|kernel_size=9x9
+Elapsed time: 0.870315 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=512x512|kernel_size=9x9
+Elapsed time: 0.826176 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.278217 sec
-Correct Anwser
+Elapsed time: 0.269803 sec
+Wrong Answer in ans[125][508]:
+Serial Ans = 173.576157, Your Ans = -580519657472.000000
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 46.202383 sec
+Elapsed time: 45.968716 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.814075 sec
+Elapsed time: 0.808764 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 4.708632 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 9.785612 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 10.036052 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 3.090272 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 12.843069 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=512x512|kernel_size=11x11
+Elapsed time: 10.277365 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=512x512|kernel_size=11x11
+Elapsed time: 4.815667 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=512x512|kernel_size=11x11
+Elapsed time: 4.785593 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.835309 sec
+Elapsed time: 3.526345 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 38.199636 sec
+Elapsed time: 41.588651 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=512x512|kernel_size=11x11
-Elapsed time: 4.707248 sec
+Elapsed time: 4.796702 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 3.192546 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=512x512|kernel_size=11x11
+Elapsed time: 3.225927 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=512x512|kernel_size=11x11
+Elapsed time: 3.206389 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.576908 sec
+Elapsed time: 0.588636 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 35.541318 sec
+Elapsed time: 39.043541 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=512x512|kernel_size=11x11
-Elapsed time: 3.193883 sec
+Elapsed time: 3.235475 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 2.425763 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=512x512|kernel_size=11x11
+Elapsed time: 2.472992 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=512x512|kernel_size=11x11
+Elapsed time: 2.477859 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.452419 sec
+Elapsed time: 0.453332 sec
 Wrong Answer in ans[253][510]:
-Serial Ans = 161.677704, Your Ans = 31208104835212640256.000000
+Serial Ans = 161.677704, Your Ans = -486218284170656381178740736.000000
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 40.797941 sec
+Elapsed time: 43.901594 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=512x512|kernel_size=11x11
-Elapsed time: 2.426034 sec
+Elapsed time: 2.487824 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.998361 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=512x512|kernel_size=11x11
+Elapsed time: 2.001526 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=512x512|kernel_size=11x11
+Elapsed time: 2.005094 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.387026 sec
+Elapsed time: 0.376528 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 45.230568 sec
+Elapsed time: 46.028842 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.983482 sec
+Elapsed time: 2.000127 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.691400 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.665939 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.689241 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.344377 sec
-Wrong Answer in ans[253][510]:
-Serial Ans = 161.677704, Your Ans = -446978001242179948790153216.000000
+Elapsed time: 0.329991 sec
+Wrong Answer in ans[506][510]:
+Serial Ans = 154.796158, Your Ans = 12938050537052898559262720.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 48.112326 sec
+Elapsed time: 50.767211 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.686518 sec
+Elapsed time: 1.665508 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.466563 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.445995 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.452439 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.322065 sec
+Elapsed time: 0.303187 sec
 Wrong Answer in ans[253][510]:
-Serial Ans = 161.677704, Your Ans = 160.195419
+Serial Ans = 161.677704, Your Ans = 39977622347532695303618560.000000
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 41.004391 sec
+Elapsed time: 49.119753 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.448504 sec
+Elapsed time: 1.446535 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.328609 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.609604 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.312236 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.333220 sec
-Wrong Answer in ans[124][510]:
-Serial Ans = 117.473839, Your Ans = -5968382761789030400.000000
+Elapsed time: 0.314513 sec
+Wrong Answer in ans[253][510]:
+Serial Ans = 161.677704, Your Ans = -1920418704080984080539026844549120.000000
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 47.057308 sec
+Elapsed time: 47.049871 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=512x512|kernel_size=11x11
-Elapsed time: 1.299252 sec
+Elapsed time: 1.309768 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 10.243205 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 19.677086 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 19.996412 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 11.912352 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 75.675006 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 20.214362 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 10.293006 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 10.116777 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 7.388067 sec
+Elapsed time: 6.189010 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 457.265170 sec
+Elapsed time: 473.300740 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 10.300535 sec
+Elapsed time: 10.274969 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 6.939529 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 6.885855 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 6.792391 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 5.083677 sec
+Elapsed time: 4.168792 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 475.736779 sec
+Elapsed time: 535.830818 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 6.980581 sec
+Elapsed time: 6.910418 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 5.310631 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 5.215185 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 5.162215 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.964200 sec
+Elapsed time: 3.239650 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 599.829025 sec
+Elapsed time: 586.069713 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 5.333875 sec
+Elapsed time: 5.228071 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 4.329996 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 4.242318 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 4.218793 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.575872 sec
+Elapsed time: 2.716204 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 723.493604 sec
+Elapsed time: 699.087108 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 4.360056 sec
+Elapsed time: 4.272271 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.716151 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 3.581366 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 3.561364 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.438410 sec
+Elapsed time: 2.369765 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 747.764603 sec
+Elapsed time: 742.974722 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.655610 sec
+Elapsed time: 3.581273 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.217943 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 3.098865 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 3.090071 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.188905 sec
+Elapsed time: 2.225826 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 722.820280 sec
+Elapsed time: 729.243574 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 3.236760 sec
+Elapsed time: 3.104928 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.882510 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 2.839091 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 2.711331 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.956737 sec
+Elapsed time: 2.451271 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 733.972489 sec
+Elapsed time: 691.143077 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.813076 sec
+Elapsed time: 2.778316 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 16.152119 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 30.973694 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 31.993718 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 13.943292 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 84.030031 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 32.018385 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 16.199789 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 15.910977 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 8.162059 sec
+Elapsed time: 6.941942 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 490.642612 sec
+Elapsed time: 502.984072 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 16.110991 sec
+Elapsed time: 16.003242 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 10.826062 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 10.767445 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 10.760459 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 5.537644 sec
+Elapsed time: 4.796579 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 486.571361 sec
+Elapsed time: 557.220254 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 11.093828 sec
+Elapsed time: 10.927438 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 8.430977 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 8.136481 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 8.124716 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 3.699802 sec
+Elapsed time: 3.689714 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 595.885807 sec
+Elapsed time: 618.097541 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 8.373283 sec
+Elapsed time: 8.181495 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 6.816168 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 6.628694 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 6.664017 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 3.110586 sec
+Elapsed time: 3.037282 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 697.620884 sec
+Elapsed time: 703.409533 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 6.799887 sec
+Elapsed time: 6.678988 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 5.792724 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 5.594611 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 5.670589 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.815558 sec
+Elapsed time: 2.564531 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 735.517459 sec
+Elapsed time: 742.595302 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 5.656290 sec
+Elapsed time: 5.610331 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.985614 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 4.850319 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 4.950149 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.507224 sec
+Elapsed time: 2.372260 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 729.894670 sec
+Elapsed time: 729.513002 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.998732 sec
+Elapsed time: 4.872628 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.466746 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 4.849336 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 4.916307 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 3.051241 sec
+Elapsed time: 2.694314 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 719.152230 sec
+Elapsed time: 707.734716 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 4.363911 sec
+Elapsed time: 4.364799 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 32.214462 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 62.303255 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 62.045467 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 17.791333 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 108.326589 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 62.539350 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 31.859414 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 31.835214 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 9.345269 sec
-Correct Anwser
+Elapsed time: 9.327119 sec
+Wrong Answer in ans[510][2046]:
+Serial Ans = 94.503418, Your Ans = 386039.656250
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 505.582868 sec
+Elapsed time: 548.952064 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 32.138516 sec
+Elapsed time: 32.019376 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 21.688683 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 21.165070 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 21.151702 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 6.351088 sec
+Elapsed time: 6.305260 sec
 Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 331098617130652781324009472.000000
+Serial Ans = 94.503418, Your Ans = 69574375106694890842186842112.000000
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 505.398651 sec
+Elapsed time: 501.719197 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 21.879758 sec
+Elapsed time: 21.217739 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 16.391864 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 15.947723 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 15.990505 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 4.872368 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = -2063775360.000000
+Elapsed time: 4.792854 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 590.437063 sec
+Elapsed time: 595.846289 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 16.291436 sec
+Elapsed time: 15.929445 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 13.297684 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 13.048458 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 13.037810 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 3.950778 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 94.333824
+Elapsed time: 3.938792 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 700.127972 sec
+Elapsed time: 704.314040 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 13.268802 sec
+Elapsed time: 13.001006 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 11.067032 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 10.986832 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 10.947184 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 3.379873 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 94.834099
+Elapsed time: 3.333736 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 736.114690 sec
+Elapsed time: 737.690361 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 11.076176 sec
+Elapsed time: 10.978282 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 9.742969 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 9.520265 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 9.612279 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.961687 sec
-Wrong Answer in ans[510][2046]:
-Serial Ans = 94.503418, Your Ans = 291451584.000000
+Elapsed time: 2.888411 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 728.479939 sec
+Elapsed time: 738.742139 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 9.599906 sec
+Elapsed time: 9.512379 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 8.497099 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 8.894190 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 8.835965 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.715066 sec
+Elapsed time: 3.197412 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 727.527769 sec
+Elapsed time: 732.590785 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 8.473474 sec
+Elapsed time: 8.431061 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 47.240990 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 88.830808 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 89.105401 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 20.665725 sec
+Correct Anwser
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 137.987903 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 90.093397 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 45.455690 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 45.979346 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 10.741252 sec
+Elapsed time: 10.556649 sec
 Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = -3109679616.000000
+Serial Ans = 117.818939, Your Ans = 830780864.000000
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 578.590167 sec
+Elapsed time: 582.452227 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 47.090292 sec
+Elapsed time: 45.571816 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 31.726765 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 30.640752 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 30.472377 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 7.257176 sec
-Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = 237972455424.000000
+Elapsed time: 7.165802 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 543.367733 sec
+Elapsed time: 561.388146 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 31.327303 sec
+Elapsed time: 30.408833 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 23.986623 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 22.950543 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 23.021176 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 5.532092 sec
-Correct Anwser
+Elapsed time: 5.440727 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = -2858946148294535023689728.000000
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 649.967862 sec
+Elapsed time: 647.530790 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 23.802482 sec
+Elapsed time: 22.903321 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 19.568594 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 18.743854 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 18.755263 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 4.520725 sec
-Correct Anwser
+Elapsed time: 4.421128 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = -2782435812774146587447549451304960.000000
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 718.968088 sec
+Elapsed time: 751.547925 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 18.989997 sec
+Elapsed time: 18.648421 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 16.181503 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 15.695738 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 15.752967 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 3.757904 sec
-Correct Anwser
+Elapsed time: 3.736267 sec
+Wrong Answer in ans[509][2044]:
+Serial Ans = 117.818939, Your Ans = 2665533208002560.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 744.295435 sec
+Elapsed time: 776.297911 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 15.997710 sec
+Elapsed time: 15.619633 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 13.937003 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 13.672455 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 13.773150 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 3.365207 sec
-Wrong Answer in ans[509][2044]:
-Serial Ans = 117.818939, Your Ans = 6435464642822144.000000
+Elapsed time: 3.220595 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 733.510529 sec
+Elapsed time: 769.994085 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 13.758909 sec
+Elapsed time: 13.614413 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 12.589345 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 12.565087 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 12.587110 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 3.336067 sec
+Elapsed time: 3.524493 sec
 Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 723.937500 sec
+Elapsed time: 761.168650 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 12.103625 sec
+Elapsed time: 12.030831 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 75.976473 sec
+method=pthread|exec=conv_cc.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 147.508416 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 146.658660 sec
+Correct Anwser
+
+method=pthread|exec=conv_sk.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 25.085455 sec
+Wrong Answer in ans[508][2046]:
+Serial Ans = 84.165298, Your Ans = -1287988871876153824705555279642624.000000
+
+method=pthread|exec=conv_tp.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 198.332894 sec
+Correct Anwser
+
+method=pthread|exec=conv_tprow.out|thread_num=1|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 146.587393 sec
+Correct Anwser
+
+method=pthread|exec=conv_cc.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 75.135360 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 74.418035 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 13.105773 sec
-Correct Anwser
+Elapsed time: 13.046115 sec
+Wrong Answer in ans[508][2046]:
+Serial Ans = 84.165298, Your Ans = -77237204577838638296989696.000000
 
 method=pthread|exec=conv_tp.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 589.741720 sec
+Elapsed time: 627.616132 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=2|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 76.165155 sec
+Elapsed time: 75.324040 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 51.932604 sec
+method=pthread|exec=conv_cc.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 49.921929 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 49.919168 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 8.851288 sec
-Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = -1641788207303927579341536362496.000000
+Elapsed time: 8.778841 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 565.678745 sec
+Elapsed time: 583.476327 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=3|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 51.146969 sec
+Elapsed time: 50.059364 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 38.967283 sec
+method=pthread|exec=conv_cc.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 37.609841 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 37.531032 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 6.757711 sec
+Elapsed time: 6.694355 sec
 Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = 75071.710938
+Serial Ans = 84.165298, Your Ans = 1495604455654860471224238080.000000
 
 method=pthread|exec=conv_tp.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 650.097746 sec
+Elapsed time: 685.747425 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=4|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 39.032059 sec
+Elapsed time: 37.610426 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 31.638577 sec
+method=pthread|exec=conv_cc.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 30.688992 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 30.703788 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 5.460975 sec
-Wrong Answer in ans[508][2046]:
-Serial Ans = 84.165298, Your Ans = -74847641600.000000
+Elapsed time: 5.424743 sec
+Correct Anwser
 
 method=pthread|exec=conv_tp.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 741.451011 sec
+Elapsed time: 751.828891 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=5|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 31.277016 sec
+Elapsed time: 30.690947 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 26.462668 sec
+method=pthread|exec=conv_cc.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 25.702351 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 25.675284 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 4.626795 sec
+Elapsed time: 4.555636 sec
 Wrong Answer in ans[1021][2046]:
-Serial Ans = 122.633606, Your Ans = 226158815452178315971953426432.000000
+Serial Ans = 122.633606, Your Ans = -3491498775685889202473307677392896.000000
 
 method=pthread|exec=conv_tp.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 766.100027 sec
+Elapsed time: 782.126583 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=6|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 26.191814 sec
+Elapsed time: 25.769312 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 22.823204 sec
+method=pthread|exec=conv_cc.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 22.473980 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 22.537346 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 4.019256 sec
+Elapsed time: 3.954588 sec
 Wrong Answer in ans[1021][2046]:
-Serial Ans = 122.633606, Your Ans = 2556163331094093555004017213440.000000
+Serial Ans = 122.633606, Your Ans = 8697378059025712676864.000000
 
 method=pthread|exec=conv_tp.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 752.279178 sec
+Elapsed time: 673.155354 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=7|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 22.634030 sec
+Elapsed time: 22.424234 sec
 Correct Anwser
 
-method=pthread|exec=conv.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 20.014586 sec
+method=pthread|exec=conv_cc.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 20.255580 sec
+Correct Anwser
+
+method=pthread|exec=conv_bk.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 20.233714 sec
 Correct Anwser
 
 method=pthread|exec=conv_sk.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 3.603662 sec
+Elapsed time: 4.189194 sec
 Wrong Answer in ans[1021][2046]:
-Serial Ans = 122.633606, Your Ans = 23011985802245357296418816.000000
+Serial Ans = 122.633606, Your Ans = 50161107949492799647144367620096.000000
 
 method=pthread|exec=conv_tp.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 752.698532 sec
+Elapsed time: 641.270937 sec
 Correct Anwser
 
 method=pthread|exec=conv_tprow.out|thread_num=8|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 19.864792 sec
+Elapsed time: 19.856114 sec
 Correct Anwser

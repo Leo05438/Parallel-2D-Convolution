@@ -1,0 +1,10 @@
+g++ conv.cpp -O3 -o conv.out
+g++ conv_sk.cpp -O3 -o conv_sk.out
+
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 18.189761 sec
+Correct Anwser
+
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 18.189761 sec
+Correct Anwser

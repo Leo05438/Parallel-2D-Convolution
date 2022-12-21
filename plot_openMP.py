@@ -67,6 +67,9 @@ def main():
             kernel_size = attr_line.split('|')[4].split('=')[1].strip()
             time = float(time_line.split(' ')[2]) # example : Elapsed time: 0.071317 sec
 
+            if thread_num == 1:
+                i += 1
+                continue
 
             if method not in openMP_data.keys():
                 openMP_data[method] = {}
@@ -115,11 +118,12 @@ def main():
             for method in methods:
                 plot_data[resolution][kernel_size][method] = []
                 for thread_num in thread_nums:
-                    val = np.round(openMP_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = openMP_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[resolution][kernel_size][method].append(val)
     
     font = {'size': 9}
@@ -165,11 +169,12 @@ def main():
             for method in methods:
                 plot_data[thread_num][kernel_size][method] = []
                 for resolution in resolutions:
-                    val = np.round(openMP_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = openMP_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[thread_num][kernel_size][method].append(val)
 
     list_length = len(resolutions)
@@ -213,11 +218,12 @@ def main():
             for method in methods:
                 plot_data[resolution][thread_num][method] = []
                 for kernel_size in kernel_sizes:
-                    val = np.round(openMP_data[method][thread_num][resolution][kernel_size] * 1000) / 1000
+                    val = openMP_data[method][thread_num][resolution][kernel_size]
                     if 'sk' in method:
                         val = serial_data['conv_sk'][resolution][kernel_size] / val
                     else:
                         val = serial_data['conv'][resolution][kernel_size] / val
+                    val = np.round(val * 1000) / 1000
                     plot_data[resolution][thread_num][method].append(val)
 
     list_length = len(kernel_sizes)

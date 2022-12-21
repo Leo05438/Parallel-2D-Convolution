@@ -1,122 +1,122 @@
 g++ conv.cpp -O3 -o conv.out
 g++ conv_sk.cpp -O3 -o conv_sk.out
 
-method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 3x3
-Elapsed time: 0.104718 sec
+method=serial|exec=conv.out|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.082914 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 3x3
-Elapsed time: 0.045564 sec
+method=serial|exec=conv_sk.out|resolution=128x128|kernel_size=3x3
+Elapsed time: 0.044648 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 5x5
-Elapsed time: 0.157332 sec
+method=serial|exec=conv.out|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.134860 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 5x5
-Elapsed time: 0.055430 sec
+method=serial|exec=conv_sk.out|resolution=128x128|kernel_size=5x5
+Elapsed time: 0.054105 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 7x7
-Elapsed time: 0.292414 sec
+method=serial|exec=conv.out|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.267021 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 7x7
-Elapsed time: 0.071317 sec
+method=serial|exec=conv_sk.out|resolution=128x128|kernel_size=7x7
+Elapsed time: 0.071030 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 9x9
-Elapsed time: 0.390668 sec
+method=serial|exec=conv.out|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.364802 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 9x9
-Elapsed time: 0.079223 sec
+method=serial|exec=conv_sk.out|resolution=128x128|kernel_size=9x9
+Elapsed time: 0.081316 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 128x128 | kernel_size = 11x11
-Elapsed time: 0.623833 sec
+method=serial|exec=conv.out|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.599821 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 128x128 | kernel_size = 11x11
-Elapsed time: 0.102522 sec
+method=serial|exec=conv_sk.out|resolution=128x128|kernel_size=11x11
+Elapsed time: 0.102728 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 3x3
-Elapsed time: 1.574638 sec
+method=serial|exec=conv.out|resolution=512x512|kernel_size=3x3
+Elapsed time: 1.282549 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 3x3
-Elapsed time: 0.669897 sec
+method=serial|exec=conv_sk.out|resolution=512x512|kernel_size=3x3
+Elapsed time: 0.685867 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 5x5
-Elapsed time: 2.418527 sec
+method=serial|exec=conv.out|resolution=512x512|kernel_size=5x5
+Elapsed time: 2.149639 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 5x5
-Elapsed time: 0.810629 sec
+method=serial|exec=conv_sk.out|resolution=512x512|kernel_size=5x5
+Elapsed time: 0.829819 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 7x7
-Elapsed time: 4.396872 sec
+method=serial|exec=conv.out|resolution=512x512|kernel_size=7x7
+Elapsed time: 4.141173 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 7x7
-Elapsed time: 1.081048 sec
+method=serial|exec=conv_sk.out|resolution=512x512|kernel_size=7x7
+Elapsed time: 1.128706 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 9x9
-Elapsed time: 6.131419 sec
+method=serial|exec=conv.out|resolution=512x512|kernel_size=9x9
+Elapsed time: 5.897315 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 9x9
-Elapsed time: 1.260026 sec
+method=serial|exec=conv_sk.out|resolution=512x512|kernel_size=9x9
+Elapsed time: 1.285968 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 512x512 | kernel_size = 11x11
-Elapsed time: 9.898620 sec
+method=serial|exec=conv.out|resolution=512x512|kernel_size=11x11
+Elapsed time: 9.686360 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 512x512 | kernel_size = 11x11
-Elapsed time: 1.583829 sec
+method=serial|exec=conv_sk.out|resolution=512x512|kernel_size=11x11
+Elapsed time: 1.623016 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 3x3
-Elapsed time: 25.613378 sec
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 21.369841 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 3x3
-Elapsed time: 11.943995 sec
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=3x3
+Elapsed time: 10.874523 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 5x5
-Elapsed time: 39.541071 sec
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 33.523032 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 5x5
-Elapsed time: 14.020832 sec
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=5x5
+Elapsed time: 12.941607 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 7x7
-Elapsed time: 71.261594 sec
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 67.675659 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 7x7
-Elapsed time: 17.656989 sec
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=7x7
+Elapsed time: 17.972782 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 9x9
-Elapsed time: 99.170077 sec
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 93.219690 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 9x9
-Elapsed time: 20.348997 sec
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=9x9
+Elapsed time: 20.234828 sec
 Correct Anwser
 
-method = serial | exec = conv.out | resolution = 2048x2048 | kernel_size = 11x11
-Elapsed time: 158.491091 sec
+method=serial|exec=conv.out|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 153.074567 sec
 Correct Anwser
 
-method = serial | exec = conv_sk.out | resolution = 2048x2048 | kernel_size = 11x11
-Elapsed time: 24.918470 sec
+method=serial|exec=conv_sk.out|resolution=2048x2048|kernel_size=11x11
+Elapsed time: 25.042869 sec
 Correct Anwser

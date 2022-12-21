@@ -1,0 +1,73 @@
+g++ crop.cpp -O3 -o crop.out -fopenmp
+g++ dot product.cpp -O3 -o dot product.out -fopenmp
+g++ conv_sk.cpp -O3 -o conv_sk.out -fopenmp
+
+method=openMP|exec=crop.out|thread_num=2|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 9.153660 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=2|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 10.458083 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388300
+
+method=openMP|exec=crop.out|thread_num=3|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 6.155281 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=3|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 8.175588 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388308
+
+method=openMP|exec=crop.out|thread_num=4|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 4.664389 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=4|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 7.249447 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388332
+
+method=openMP|exec=crop.out|thread_num=5|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 3.735161 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=5|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 6.738116 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388355
+
+method=openMP|exec=crop.out|thread_num=6|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 3.155285 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=6|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 6.577352 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388332
+
+method=openMP|exec=crop.out|thread_num=7|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 2.743612 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=7|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 6.322715 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388334
+
+method=openMP|exec=crop.out|thread_num=8|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 2.438034 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986221, Your Ans = 30.388311
+
+method=openMP|exec=dot product.out|thread_num=8|resolution=2048x2048|kernel_size=101x101
+Elapsed time: 7.089831 sec
+Wrong Answer in ans[0][0]:
+Serial Ans = 32.986225, Your Ans = 30.388327

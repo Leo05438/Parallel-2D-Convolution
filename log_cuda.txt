@@ -19,481 +19,481 @@ nvcc -rdc=true -gencode=arch=compute_86,code=sm_86 -Xcompiler '-fPIC'  -o conv_s
 rm cuda.o cuda_sk.o kernel_basic.o kernel_pitch.o kernel_tiling.o kernel_tiling_modified.o kernel_tiling+pitch.o kernel_sk_basic.o kernel_sk_tiling.o kernel_sk_tiling_modified.o
 
 method=cuda|exec=conv_basic.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.127106 sec
+Elapsed time: 0.124541 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.112120 sec
+Elapsed time: 0.113705 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.114712 sec
+Elapsed time: 0.110414 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.130597 sec
+Elapsed time: 0.117116 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.095892 sec
+Elapsed time: 0.089443 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.077881 sec
+Elapsed time: 0.073559 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.118134 sec
+Elapsed time: 0.105407 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=128x128|kernel_size=3x3
-Elapsed time: 0.103713 sec
+Elapsed time: 0.077638 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.090051 sec
+Elapsed time: 0.106410 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.081805 sec
+Elapsed time: 0.112634 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.080702 sec
+Elapsed time: 0.084469 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.081885 sec
+Elapsed time: 0.111939 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.081222 sec
+Elapsed time: 0.084677 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.072087 sec
+Elapsed time: 0.077588 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.077042 sec
+Elapsed time: 0.099716 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=128x128|kernel_size=5x5
-Elapsed time: 0.076010 sec
+Elapsed time: 0.076526 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.099628 sec
+Elapsed time: 0.087317 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.081787 sec
+Elapsed time: 0.115365 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.111805 sec
+Elapsed time: 0.082692 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.089382 sec
+Elapsed time: 0.103972 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.110311 sec
+Elapsed time: 0.116333 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.079665 sec
+Elapsed time: 0.074184 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.079484 sec
+Elapsed time: 0.076503 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=128x128|kernel_size=7x7
-Elapsed time: 0.075886 sec
+Elapsed time: 0.077984 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.081824 sec
+Elapsed time: 0.109646 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.131061 sec
+Elapsed time: 0.081948 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.082567 sec
+Elapsed time: 0.080845 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.090815 sec
+Elapsed time: 0.086927 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.113071 sec
+Elapsed time: 0.087618 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.088069 sec
+Elapsed time: 0.090592 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.077877 sec
+Elapsed time: 0.102877 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=128x128|kernel_size=9x9
-Elapsed time: 0.109471 sec
+Elapsed time: 0.099572 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.112376 sec
+Elapsed time: 0.091043 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.093870 sec
+Elapsed time: 0.116333 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.114113 sec
+Elapsed time: 0.091514 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.113367 sec
+Elapsed time: 0.090343 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.085039 sec
+Elapsed time: 0.092757 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.077255 sec
+Elapsed time: 0.073287 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.073601 sec
+Elapsed time: 0.101348 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=128x128|kernel_size=11x11
-Elapsed time: 0.073714 sec
+Elapsed time: 0.094789 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.253205 sec
+Elapsed time: 0.252981 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.283077 sec
+Elapsed time: 0.294922 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.252971 sec
+Elapsed time: 0.280730 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.277957 sec
+Elapsed time: 0.289205 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.254398 sec
+Elapsed time: 0.275542 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.283443 sec
+Elapsed time: 0.287455 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.277912 sec
+Elapsed time: 0.268588 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=512x512|kernel_size=3x3
-Elapsed time: 0.281586 sec
+Elapsed time: 0.265098 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.286021 sec
+Elapsed time: 0.297888 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.280369 sec
+Elapsed time: 0.277048 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.256948 sec
+Elapsed time: 0.274101 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.257036 sec
+Elapsed time: 0.275217 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.291233 sec
+Elapsed time: 0.258052 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.248107 sec
+Elapsed time: 0.245977 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.259357 sec
+Elapsed time: 0.268950 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=512x512|kernel_size=5x5
-Elapsed time: 0.281749 sec
+Elapsed time: 0.266257 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.260391 sec
+Elapsed time: 0.309130 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.265278 sec
+Elapsed time: 0.314765 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.293909 sec
+Elapsed time: 0.284441 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.264874 sec
+Elapsed time: 0.268861 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.277482 sec
+Elapsed time: 0.293802 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.280100 sec
+Elapsed time: 0.274443 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.278026 sec
+Elapsed time: 0.289051 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=512x512|kernel_size=7x7
-Elapsed time: 0.255298 sec
+Elapsed time: 0.256969 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.281544 sec
+Elapsed time: 0.317438 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.271722 sec
+Elapsed time: 0.314000 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.296577 sec
+Elapsed time: 0.280815 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.279692 sec
+Elapsed time: 0.279670 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.299786 sec
+Elapsed time: 0.307683 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.277631 sec
+Elapsed time: 0.276867 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.264682 sec
+Elapsed time: 0.257059 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=512x512|kernel_size=9x9
-Elapsed time: 0.283442 sec
+Elapsed time: 0.259565 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.312570 sec
+Elapsed time: 0.314297 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.289190 sec
+Elapsed time: 0.289479 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.327222 sec
+Elapsed time: 0.322563 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.304763 sec
+Elapsed time: 0.322304 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.328772 sec
+Elapsed time: 0.328158 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.299724 sec
+Elapsed time: 0.277088 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.291743 sec
+Elapsed time: 0.263118 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=512x512|kernel_size=11x11
-Elapsed time: 0.286598 sec
+Elapsed time: 0.293939 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.566280 sec
+Elapsed time: 2.502751 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.494805 sec
+Elapsed time: 2.458973 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.420797 sec
+Elapsed time: 2.405933 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.427214 sec
+Elapsed time: 2.480141 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.446335 sec
+Elapsed time: 2.473645 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.591904 sec
+Elapsed time: 2.467701 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.594179 sec
+Elapsed time: 2.462983 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=2048x2048|kernel_size=3x3
-Elapsed time: 2.477080 sec
+Elapsed time: 2.420274 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.510746 sec
+Elapsed time: 2.447300 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.684360 sec
+Elapsed time: 2.655109 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.539828 sec
+Elapsed time: 2.498931 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.481292 sec
+Elapsed time: 2.438800 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.815461 sec
+Elapsed time: 2.447612 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.555476 sec
+Elapsed time: 2.494225 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.669188 sec
+Elapsed time: 2.574174 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=2048x2048|kernel_size=5x5
-Elapsed time: 2.554135 sec
+Elapsed time: 2.450449 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.728383 sec
+Elapsed time: 2.527149 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.627813 sec
+Elapsed time: 2.506101 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.716905 sec
+Elapsed time: 2.631674 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.625658 sec
+Elapsed time: 2.571022 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.715361 sec
+Elapsed time: 2.603301 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.573140 sec
+Elapsed time: 2.459657 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.511156 sec
+Elapsed time: 2.506143 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=2048x2048|kernel_size=7x7
-Elapsed time: 2.465687 sec
+Elapsed time: 2.468116 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.700046 sec
+Elapsed time: 2.694547 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.692946 sec
+Elapsed time: 2.737833 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.794267 sec
+Elapsed time: 2.760035 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.746135 sec
+Elapsed time: 2.645631 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.878306 sec
+Elapsed time: 2.773922 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.586932 sec
+Elapsed time: 2.435560 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.574782 sec
+Elapsed time: 2.501583 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=2048x2048|kernel_size=9x9
-Elapsed time: 2.536942 sec
+Elapsed time: 2.435828 sec
 Correct Anwser
 
 method=cuda|exec=conv_basic.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 2.801975 sec
+Elapsed time: 2.770263 sec
 Correct Anwser
 
 method=cuda|exec=conv_pitch.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 3.070765 sec
+Elapsed time: 2.784202 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 3.237598 sec
+Elapsed time: 3.011751 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling_modified.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 2.905491 sec
+Elapsed time: 2.768343 sec
 Correct Anwser
 
 method=cuda|exec=conv_tiling+pitch.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 3.116742 sec
+Elapsed time: 3.039268 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_basic.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 2.575573 sec
+Elapsed time: 2.461735 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 2.616469 sec
+Elapsed time: 2.543593 sec
 Correct Anwser
 
 method=cuda|exec=conv_sk_tiling_modified.out|resolution=2048x2048|kernel_size=11x11
-Elapsed time: 2.675059 sec
+Elapsed time: 2.642937 sec
 Correct Anwser
